@@ -1,0 +1,24 @@
+/*BASIC CSS*/
+label {
+	margin-bottom: 0px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.blogContent .mainbar>:not(:last-child) {
+	border-bottom: 1px solid #fff !important;
+}
+
+svg.line {
+	width: 22px;
+	height: 22px;
+}
+.buttons{
+	cursor: pointer;
+}
+.hyperlink:hover {
+	color: #44475b;
+}

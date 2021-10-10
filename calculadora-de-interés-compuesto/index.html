@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <!-- META TAGS -->
+      <meta charset='UTF-8'/>
+      <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+      <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+      <!-- Primary Meta Tags -->
+      <title>Calculadora de interés compuesto - Verifique todo</title>
+      <meta name="description" content="Calculadora de interés compuesto en línea gratis: verifique todo, como inversión inicial, inversiones regulares, interés total, rendimiento total (mensual / anual).">
+      <!-- CSS FILES -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/style.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/custom.css">
+      <link rel="stylesheet" type="text/css" href="assets/compound.min.css">
+      <!-- JS FILES -->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.1.2/highcharts.js"></script>
+      <script type="text/javascript" src="assets/script.min.js"></script>
+      <script type="text/javascript" src="assets/compound.min.js"></script>
+      <!--Favicon--->
+      <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+      <link rel="manifest" href="./assets/favicon/site.webmanifest">
+   </head>
+   <body class='onIndex onHome' id='mainContent'>
+      <input class='navInput hidden' id='offnav-input' type='checkbox' />
+      <div class='mainWrapper'>
+         <header class='header' id='header'>
+            <div class='headerContent'>
+               <div class='headerDiv headerLeft'>
+                  <div class='headerIcon'>
+                     <label aria-label='Menu Navigation' class='navMenu' for='offnav-input'>
+                        <svg class='line svg-1' viewBox='0 0 24 24'>
+                           <line x1='3' x2='21' y1='12' y2='12'></line>
+                           <line x1='3' x2='21' y1='6' y2='6'></line>
+                           <line x1='3' x2='21' y1='18' y2='18'></line>
+                        </svg>
+                        <svg class='line svg-2' viewBox='0 0 24 24'>
+                           <g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                              <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                           </g>
+                        </svg>
+                     </label>
+                  </div>
+                  <div class='section' id='header-widget'>
+                     <div class='widget Header' data-version='2' id='Header1'>
+                        <div class='headerInner'>
+                           <h2><span class='headerTitle'><a class="hyperlink" href="https://calculadoraes.com/">Calculadora</a></span></h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class='headerDiv headerRight'>
+                  <div class='headerIcon'>
+                     <span aria-label='Dark' class='navDark' data-text='Dark' onclick='darkMode()' role='button'><i></i></span>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class='mainMenu'>
+            <div class='section' id='main-menu'>
+               <div class='widget HTML' data-version='2' id='HTML000'>
+                  <ul class='htmlMenu' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement'>
+                     <li class='close'>
+                        <label class='link' for='offnav-input'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                                 <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                              </g>
+                           </svg>
+                           <span class='name' data-text='Back'></span> 
+                        </label>
+                     </li>
+                     <li class='dropDown break'>
+                        <input class='dropMenu hidden' id='offdropMenu2' name='dropDown' type='checkbox' />
+                        <label class='link' for='offdropMenu2'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(2.500000, 2.500000)'>
+                                 <line x1='6.6787' x2='12.4937' y1='12.0742685' y2='12.0742685'></line>
+                                 <path d='M-1.13686838e-13,5.29836453 C-1.13686838e-13,2.85645977 1.25,0.75931691 3.622,0.272650243 C5.993,-0.214968804 7.795,-0.0463973758 9.292,0.761221672 C10.79,1.56884072 10.361,2.76122167 11.9,3.63645977 C13.44,4.51265024 15.917,3.19645977 17.535,4.94217405 C19.229,6.7697931 19.2200005,9.57550739 19.2200005,11.3640788 C19.2200005,18.1602693 15.413,18.6993169 9.61,18.6993169 C3.807,18.6993169 -1.13686838e-13,18.2288407 -1.13686838e-13,11.3640788 L-1.13686838e-13,5.29836453 Z'></path>
+                              </g>
+                           </svg>
+                           <span class='name'>Calculadora</span>
+                           <svg class='line down' viewBox='0 0 24 24'>
+                              <g transform='translate(5.000000, 8.500000)'>
+                                 <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                              </g>
+                           </svg>
+                        </label>
+                        <ul>
+                           <li itemprop='name'><a href='https://calculadoraes.com/' itemprop='url'>Calculadora</a></li>
+                           <li itemprop='name'><a href='https://calculadoraes.com/calculadora-de-hipoteca' itemprop='url'>Calculadora de hipoteca</a></li>
+                           <li itemprop='name'><a href='https://calculadoraes.com/calculadora-sueldo-neto' itemprop='url'>Calculadora sueldo neto</a></li>
+                           <li itemprop='name'><a href='https://calculadoraes.com/calculadora-de-préstamo' itemprop='url'>Calculadora de préstamo</a></li>
+                           <li itemprop='name'><a href='https://calculadoraes.com/calculadora-de-interés-compuesto' itemprop='url'>Calculadora de interés compuesto</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com.com/' itemprop='url'>
+                           <span class='name' itemprop='name'>Calculadora</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/calculadora-de-hipoteca' itemprop='url'>
+                           <span class='name' itemprop='name'>Calculadora de hipoteca</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/calculadora-sueldo-neto' itemprop='url'>
+                           <span class='name' itemprop='name'>Calculadora sueldo neto</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/calculadora-de-préstamo' itemprop='url'>
+                           <span class='name' itemprop='name'>Calculadora de préstamo</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/calculadora-de-interés-compuesto' itemprop='url'>
+                           <span class='name' itemprop='name'>Calculadora de interés compuesto</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/calculadora-de-préstamo' itemprop='url'>
+                           <span class='name' itemprop='name'>Calculadora de reembolso de préstamos</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/privacy-policy' itemprop='url'>
+                           <span class='name' itemprop='name'>Privacy Policy</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/disclaimer' itemprop='url'>
+                           <span class='name' itemprop='name'>Disclaimer</span> 
+                        </a>
+                     </li>
+
+                     <li>
+                        <a class='link' href='https://calculadoraes.com/about' itemprop='url'>
+                           <svg class='line' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                              <g transform='translate(2.749500, 2.549500)'>
+                                 <path d='M6.809,18.9067 C3.137,18.9067 9.41469125e-14,18.3517 9.41469125e-14,16.1277 C9.41469125e-14,13.9037 3.117,11.8997 6.809,11.8997 C10.481,11.8997 13.617,13.8847 13.617,16.1077 C13.617,18.3307 10.501,18.9067 6.809,18.9067 Z'></path>
+                                 <path d='M6.809,8.728 C9.219,8.728 11.173,6.774 11.173,4.364 C11.173,1.954 9.219,-2.48689958e-14 6.809,-2.48689958e-14 C4.399,-2.48689958e-14 2.44496883,1.954 2.44496883,4.364 C2.436,6.766 4.377,8.72 6.778,8.728 L6.809,8.728 Z'></path>
+                                 <path d='M14.0517,7.5293 C15.4547,7.1543 16.4887007,5.8753 16.4887007,4.3533 C16.4897,2.7653 15.3627,1.4393 13.8647,1.1323'></path>
+                                 <path d='M14.7113,11.104 C16.6993,11.104 18.3973,12.452 18.3973,13.655 C18.3973,14.364 17.8123,15.092 16.9223,15.301'></path>
+                              </g>
+                           </svg>
+                           <span class='name' itemprop='name'>About</span> 
+                        </a>
+                     </li>
+                     <li class='break'>
+                        <a class='link' href='https://calculadoraes.com/contact' itemprop='url'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(2.452080, 2.851980)'>
+                                 <path d='M15.0928322,6.167017 C15.0928322,6.167017 11.8828071,10.0196486 9.53493746,10.0196486 C7.18807029,10.0196486 3.941955,6.167017 3.941955,6.167017'></path>
+                                 <path d='M1.04805054e-13,9.11679198 C1.04805054e-13,2.27869674 2.38095238,8.8817842e-15 9.52380952,8.8817842e-15 C16.6666667,8.8817842e-15 19.047619,2.27869674 19.047619,9.11679198 C19.047619,15.9538847 16.6666667,18.233584 9.52380952,18.233584 C2.38095238,18.233584 1.04805054e-13,15.9538847 1.04805054e-13,9.11679198 Z'></path>
+                              </g>
+                           </svg>
+                           <span class='name' itemprop='name'>Contact</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://twitter.com/DevDasPratap/' itemprop='url'>
+                           <span class='name' itemprop='name'>Follow</span> 
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <label class='fullClose menu' for='offnav-input'></label>
+         </div>
+         <div class='mainInner sectionInner'>
+            <div class='blogContent'>
+               <!-- CONTENT AREA -->
+               <main class='mainbar'>
+                  <main id="mainContent">
+                     <div id="caluk-cic" class="caluk-container">
+                        <div class="break input yourinvestment">
+                           <h3 class="col100">Tu inversión</h3>
+                           <div class="select-currency-div">
+                              <span> Seleccione su moneda: </span>
+                              <div class="select-currency">
+                                 <select id="currency" class="x-select">
+                                    <option value="₹" selected>₹</option>
+                                    <option value="$">$</option>
+                                    <option value="€">€</option>
+                                    <option value="£">£</option>
+                                    <option value="₺">₺</option>
+                                    <option value="₴">₴</option>
+                                    <option value="¥">¥</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <label for="pv">Inversión inicial:</label>
+                              <div class="currency">₹</div>
+                              <input id="pv" value="100000" inputmode="numeric" type="text" class="dollars int" aria-required="true">
+                           </div>
+                           <div class="row">
+                              <label for="pmt">Inversión regular:</label>
+                              <div class="currency">₹</div>
+                              <input id="pmt" value="10000" inputmode="numeric" type="text" class="dollars int" aria-required="true">
+                              <div class="x-select-wrap">
+                                 <select id="pmtFreq" class="x-select">
+                                    <option value="1">Anualmente</option>
+                                    <option value="12" selected="selected">Mensual</option>
+                                    <option value="26">Quincenal</option>
+                                    <option value="52">Semanalmente</option>
+                                    <option value="365">Diaria</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="row comf">
+                              <label for="nperFreq">Frecuencia compuesta:</label>
+                              <div class="x-select-wrap">
+                                 <select id="nperFreq">
+                                    <option value="12" selected="selected">Mensual</option>
+                                    <option value="1">Anualmente</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <label for="nper">Número de años: <span>(max 100)</span></label>
+                              <div class="slider-div"><input class="slider" type="range" id="nper-slider" step="1" min="1" value="10" max="100"></div>
+                              <div class="right-input"><input id="nper" inputmode="numeric" value="10" type="text" class="years int"><span>years</span></div>
+                           </div>
+                           <div class="row">
+                              <label for="rate">Tasa de interés anual: <span>(max 100%)</span></label>
+                              <div class="slider-div"><input class="slider" type="range" id="rate-slider" step="1" min="1" value="12" max="100"></div>
+                              <div class="right-input"><input id="rate" inputmode="decimal" type="text" class="interest float" value="12.00"><span>%</span></div>
+                           </div>
+                        </div>
+                        <div class="break result" style="display: block;">
+                           <div class="result-box">
+                              <h3>Regreso</h3>
+                              <div id="chart" data-highcharts-chart="0" style="overflow: hidden;">
+                                 <div id="highcharts-44zhj3l-0" style="position: relative; overflow: hidden; width: 582px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;" dir="ltr" class="highcharts-container ">
+                                    <svg version="1.1" class="highcharts-root" xmlns="http://www.w3.org/2000/svg" width="582" height="400" viewBox="0 0 582 400">
+                                       <desc>Creado con Highcharts 8.2.0</desc>
+                                       <defs>
+                                          <clipPath id="highcharts-44zhj3l-1-">
+                                             <rect x="0" y="0" width="485" height="335" fill="none"></rect>
+                                          </clipPath>
+                                       </defs>
+                                       <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="582" height="400" rx="0" ry="0"></rect>
+                                       <rect fill="none" class="highcharts-plot-background" x="87" y="10" width="485" height="335"></rect>
+                                       <g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1">
+                                          <path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 159.5 10 L 159.5 345" opacity="1"></path>
+                                          <path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 256.5 10 L 256.5 345" opacity="1"></path>
+                                          <path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 353.5 10 L 353.5 345" opacity="1"></path>
+                                          <path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 450.5 10 L 450.5 345" opacity="1"></path>
+                                          <path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 547.5 10 L 547.5 345" opacity="1"></path>
+                                       </g>
+                                       <g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1">
+                                          <path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 87 345.5 L 572 345.5" opacity="1"></path>
+                                          <path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 87 270.5 L 572 270.5" opacity="1"></path>
+                                          <path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 87 196.5 L 572 196.5" opacity="1"></path>
+                                          <path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 87 121.5 L 572 121.5" opacity="1"></path>
+                                          <path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 87 46.5 L 572 46.5" opacity="1"></path>
+                                       </g>
+                                       <rect fill="none" class="highcharts-plot-border" data-z-index="1" x="87" y="10" width="485" height="335"></rect>
+                                       <g class="highcharts-axis highcharts-xaxis" data-z-index="2">
+                                          <path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 159.5 345 L 159.5 355" opacity="1"></path>
+                                          <path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 256.5 345 L 256.5 355" opacity="1"></path>
+                                          <path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 353.5 345 L 353.5 355" opacity="1"></path>
+                                          <path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 450.5 345 L 450.5 355" opacity="1"></path>
+                                          <path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 547.5 345 L 547.5 355" opacity="1"></path>
+                                          <text x="329.5" data-z-index="7" text-anchor="middle" transform="translate(0,0)" class="highcharts-axis-title" style="color:#666666;fill:#666666;" y="383">
+                                             <tspan>Años</tspan>
+                                          </text>
+                                          <path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 87 345.5 L 572 345.5"></path>
+                                       </g>
+                                       <g class="highcharts-axis highcharts-yaxis" data-z-index="2">
+                                          <text x="24.265625" data-z-index="7" text-anchor="middle" transform="translate(0,0) rotate(270 24.265625 177.5)" class="highcharts-axis-title" style="color:#666666;fill:#666666;" y="177.5">
+                                             <tspan>Ahorros</tspan>
+                                          </text>
+                                          <path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 87 10 L 87 345"></path>
+                                       </g>
+                                       <g class="highcharts-series-group" data-z-index="3">
+                                          <g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(87,10) scale(1 1)" clip-path="url(#highcharts-44zhj3l-1-)">
+                                             <rect x="-44" y="336" width="39" height="0" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="5" y="316" width="39" height="1" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="53" y="296" width="39" height="3" fill="rgb(166,190,252)" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="102" y="273" width="39" height="8" fill="rgb(166,190,252)" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="150" y="248" width="39" height="15" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="199" y="220" width="39" height="25" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="247" y="188" width="39" height="39" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="296" y="152" width="39" height="57" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="344" y="112" width="39" height="79" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="393" y="67" width="39" height="106" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                             <rect x="441" y="17" width="39" height="138" fill="#A6BEFC" opacity="1" class="highcharts-point highcharts-color-0"></rect>
+                                          </g>
+                                          <g class="highcharts-markers highcharts-series-0 highcharts-column-series highcharts-color-0" data-z-index="0.1" opacity="1" transform="translate(87,10) scale(1 1)" clip-path="none"></g>
+                                          <g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(87,10) scale(1 1)" clip-path="url(#highcharts-44zhj3l-1-)">
+                                             <rect x="-44" y="336" width="39" height="0" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="5" y="317" width="39" height="18" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="53" y="299" width="39" height="36" fill="rgb(76,125,248)" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="102" y="281" width="39" height="54" fill="rgb(76,125,248)" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="150" y="263" width="39" height="72" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="199" y="245" width="39" height="90" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="247" y="227" width="39" height="108" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="296" y="209" width="39" height="126" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="344" y="191" width="39" height="144" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="393" y="173" width="39" height="162" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                             <rect x="441" y="155" width="39" height="180" fill="#4C7DF8" opacity="1" class="highcharts-point highcharts-color-1"></rect>
+                                          </g>
+                                          <g class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1" data-z-index="0.1" opacity="1" transform="translate(87,10) scale(1 1)" clip-path="none"></g>
+                                          <g class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-color-2 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(87,10) scale(1 1)" clip-path="url(#highcharts-44zhj3l-1-)">
+                                             <rect x="-44" y="336" width="39" height="0" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="5" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="53" y="335" width="39" height="1" fill="rgb(1,70,245)" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="102" y="335" width="39" height="1" fill="rgb(1,70,245)" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="150" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="199" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="247" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="296" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="344" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="393" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                             <rect x="441" y="335" width="39" height="1" fill="#0146F5" opacity="1" class="highcharts-point highcharts-color-2"></rect>
+                                          </g>
+                                          <g class="highcharts-markers highcharts-series-2 highcharts-column-series highcharts-color-2" data-z-index="0.1" opacity="1" transform="translate(87,10) scale(1 1)" clip-path="none"></g>
+                                       </g>
+                                       <text x="291" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text>
+                                       <text x="291" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text>
+                                       <text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color:#666666;fill:#666666;" y="397"></text>
+                                       <g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7">
+                                          <text x="159.75" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="364" opacity="1">2</text>
+                                          <text x="256.75" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="364" opacity="1">4</text>
+                                          <text x="353.75" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="364" opacity="1">6</text>
+                                          <text x="450.75" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="364" opacity="1">8</text>
+                                          <text x="547.75" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="364" opacity="1">10</text>
+                                       </g>
+                                       <g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7">
+                                          <text x="72" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="350" opacity="1">0</text>
+                                          <text x="72" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="275" opacity="1">500k</text>
+                                          <text x="72" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="200" opacity="1">
+                                             <tspan>1 000k</tspan>
+                                          </text>
+                                          <text x="72" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="126" opacity="1">
+                                             <tspan>1 500k</tspan>
+                                          </text>
+                                          <text x="72" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="51" opacity="1">
+                                             <tspan>2 000k</tspan>
+                                          </text>
+                                       </g>
+                                       <g class="highcharts-label highcharts-tooltip highcharts-color-0" style="white-space:nowrap;pointer-events:none;" data-z-index="8" transform="translate(166,-9999)" opacity="0" visibility="hidden">
+                                          <path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 219.5 0.5 C 222.5 0.5 222.5 0.5 222.5 3.5 L 222.5 142.5 C 222.5 145.5 222.5 145.5 219.5 145.5 L 3.5 145.5 C 0.5 145.5 0.5 145.5 0.5 142.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path>
+                                          <path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 219.5 0.5 C 222.5 0.5 222.5 0.5 222.5 3.5 L 222.5 142.5 C 222.5 145.5 222.5 145.5 219.5 145.5 L 3.5 145.5 C 0.5 145.5 0.5 145.5 0.5 142.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path>
+                                          <path fill="none" class="highcharts-label-box highcharts-tooltip-box highcharts-shadow" d="M 3.5 0.5 L 219.5 0.5 C 222.5 0.5 222.5 0.5 222.5 3.5 L 222.5 142.5 C 222.5 145.5 222.5 145.5 219.5 145.5 L 3.5 145.5 C 0.5 145.5 0.5 145.5 0.5 142.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path>
+                                          <path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 219.5 0.5 C 222.5 0.5 222.5 0.5 222.5 3.5 L 222.5 142.5 C 222.5 145.5 222.5 145.5 219.5 145.5 L 3.5 145.5 C 0.5 145.5 0.5 145.5 0.5 142.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#42BFC7" stroke-width="1"></path>
+                                       </g>
+                                    </svg>
+                                    <div class="highcharts-label highcharts-tooltip highcharts-color-0" style="position: absolute; left: 166px; top: -9999px; opacity: 0; pointer-events: none; visibility: hidden;">
+                                       <span data-z-index="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; color: rgb(51, 51, 51); cursor: default; margin-left: 0px; margin-top: 0px; left: 8px; top: 8px;">
+                                          <table class="chart-tooltip">
+                                             <tbody>
+                                                <tr>
+                                                   <th>Después de 2 años</th>
+                                                   <th>Tu inversión</th>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr>
+                                                   <td>Inversión inicial</td>
+                                                   <td class="num"><span class="currency">₹</span>10,000</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Inversiones regulares</td>
+                                                   <td class="num"><span class="currency">₹</span>240,000</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Interés total</td>
+                                                   <td class="num"><span class="currency">₹</span>16,944</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight:bold">Total</td>
+                                                   <td class="num" style="font-weight:bold"><span class="currency">₹</span>266,944</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="caluk-cicResult" class="ms-calc-result">
+                                 <div class="legend">
+                                    <h4>Tu inversión:</h4>
+                                    <p><span class="key pv"></span>Inversión inicial: <span class="amt"><span class="currency">₹</span>10,000</span></p>
+                                    <p><span class="key savings"></span>Inversiones regulares: <span class="amt"><span class="currency">₹</span>1,200,000</span></p>
+                                    <p><span class="key interest"></span>Interés total: <span class="amt"><span class="currency">₹</span>926,907</span></p>
+                                    <p class="total">Rentabilidad total: <span class="amt"><span class="currency">₹</span>2,136,907</span></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="explore">
+                           <h3 class="col100">Otra Inversión  (<span class="currency">₹</span>)</h3>
+                           <div class="more input">
+                              <div class="row"><label for="delay">Inicio atrasado:</label><input id="delay" inputmode="numeric" value="0 years" type="text" class="years int"></div>
+                              <div class="row">
+                                 <label for="pmt-explore">Cambiar inversión regular:</label><input id="pmt-explore" inputmode="numeric" type="text" class="dollars int" value="$0">
+                                 <p></p>
+                                 <label for="nperFreq-explore">Cambiar la frecuencia compuesta:</label>
+                                 <div class="x-select-wrap">
+                                    <select id="nperFreq-explore">
+                                       <option value="12" selected="selected">Mensual</option>
+                                       <option value="1">Anualmente</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </main>
+                  <!-- <img src="assets/ad-rectangle.jpg" width="100%;"> -->
+                  <div style="display: block; clear: both;">
+                     
+                  <h1>Calculadora de interés compuesto</h1>
+                  <p>La calculadora de interés compuesto utiliza este interés compuesto en línea gratuito para verificar cuánto dinero es su inversión inicial, inversión regular, costos totales de interés, retornos totales. Estar informado, organizado y preparado financieramente. calcular paso a paso.</p>
+                  <h2>¿Cómo usar una calculadora de interés compuesto?</h2>
+                  <ul>
+                     <li>1. Seleccione su moneda: (€)</li>
+                     <li>2. Ingrese el monto de inversión inicial:</li>
+                     <li>3. Ingrese inversión regular:</li>
+                     <li>4. Seleccionar: Diaria / semanal / quincenal / mensual / anual</li>
+                     <li>5. Seleccione la frecuencia compuesta: mensual / anual</li>
+                     <li>6. Seleccione el número de años:</li>
+                     <li>7. Seleccione la tasa de interés anual:</li>
+                     <li>8. Ahora puede ver su información de retorno e inversión (por: calculadora de interés compuesto)
+                        <ul>
+                           <li>Ver su <strong>Regreso</strong>:
+                              <ul>
+                                 <li>Saving ⬆️(By Graph)</li>
+                              <li>Años ➡️ (por gráfico)</li>
+                              </ul>
+                           </li>
+                           <li>Ver su <strong>inversión</strong>:
+                              <ul>
+                                 <li>Inversión inicial:</li>
+                                 <li>Inversiones regulares:</li>
+                                 <li>Interés total:</li>
+                                 <li>Rentabilidad total:</li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>9. ¡Eso es todo!</li>
+                  </ul>
+                  <h2>Fórmula calculadora de interés compuesto:</h2>
+                  <p>Interés compuesto: <strong>A</strong> = <strong>P(1+R/N)<sup>(NT)</strong></p>
+                     <ul>
+                        <li><strong>A</strong> = es el saldo después de <strong>T</strong> años, (el valor futuro de la inversión / préstamo, incluidos los intereses)</li>
+                        <li><strong>P</strong> = es el <strong>principal</strong>, the <strong>principal</strong> monto de la inversión (el monto del depósito o préstamo inicial)</li>
+                        <li><strong>R</strong> = es el interés anual <strong>índice</strong> Expresada como un decimal</li>
+                        <li><strong>N</strong> = es el <strong>número</strong> de veces al año se capitaliza el interés (el número de veces que se capitaliza el interés por unidad <strong>T</strong>)</li>
+                        <li><strong>T</strong> = es el momento en que se invierte o se pide prestado el dinero</li>
+                     </ul>
+                  <p>Usar este sitio web es bastante fácil, lo único que tiene que hacer es seleccionar su moneda, inversión inicial, inversión regular, seleccionar tiempo, seleccionar frecuencia compuesta, número de años, tasa de interés anual usando el mouse o si está usando un teléfono móvil, entonces toque los números seleccione sus parámetros como seleccione su moneda, inversión inicial, inversión regular, seleccione tiempo, seleccione frecuencia compuesta, número de años, tasa de interés anual.</p>
+                  <h2>¿Cuál es el propósito de usar una calculadora de interés compuesto?</h2>
+                  <p>Es útil calcular la calculadora de interés compuesto para determinar lo siguiente:</p>
+                   <ul>
+                           <li><strong>Compruebe: su devolución</strong>:
+                              <ul>
+                                 <li>Ahorrando ⬆️ (por gráfico)</li>
+                              <li>Años ➡️ (por gráfico)</li>
+                              </ul>
+                           </li>
+                           <li><strong>Compruebe: su inversión</strong>:
+                              <ul>
+                                 <li>Inversión inicial:</li>
+                                 <li>Inversiones regulares:</li>
+                                 <li>Interés total:</li>
+                                 <li>Rentabilidad total:</li>
+                              </ul>
+                              <p>Este sitio web le ahorrará mucho tiempo, no tiene que hacer ningún trabajo en papel. Puede calcular trabajos complicados de finanzas / contabilidad / matemáticas con un solo clic. Diré que este es uno de los mejores sitios web de calculadoras financieras.</p>
+                  <p class="alert alert-info" role="alert">Para cualquier consulta o información contacte directamente al: <a class="hyperlink" href="mailto:MeDevDas@hotmail.com">MeDevDas@hotmail.com</a>. Gracias 🙏</p>
+                  </div>
+                  <div class="postShare" data-text="Share:">
+                     <div class="shareContent" data-text="Share:">
+                        <div class="shareIcon facebook">
+                           <a aria-label="Share on Facebook" data-text="Facebook" href="https://www.facebook.com/sharer.php?u=https://calculadoraes.com/" rel="noopener" role="button" target="_blank">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H17V18h4a1,1,0,0,0,0-2H17V14a2,2,0,0,1,2-2h2a1,1,0,0,0,0-2H19a4,4,0,0,0-4,4v2H12a1,1,0,0,0,0,2h3v9H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="shareIcon whatsapp">
+                           <a aria-label="Share on Whatsapp" data-text="Whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fcalculadoraes.com%2F" rel="noopener" role="button" target="_blank">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z"></path>
+                                 <path d="M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="shareIcon twitter">
+                           <a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https://calculadoraes.com/&text=Calculadora%20-%20Calculadora%20cient%C3%ADfica%20y%20financiera%20GRATUITA%20en%20l%C3%ADnea&via=DevDasPratap" rel="noopener" role="button" target="_blank" title="Share to Twitter">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M13.35,28A13.66,13.66,0,0,1,2.18,22.16a1,1,0,0,1,.69-1.56l2.84-.39A12,12,0,0,1,5.44,4.35a1,1,0,0,1,1.7.31,9.87,9.87,0,0,0,5.33,5.68,7.39,7.39,0,0,1,7.24-6.15,7.29,7.29,0,0,1,5.88,3H29a1,1,0,0,1,.9.56,1,1,0,0,1-.11,1.06L27,12.27c0,.14,0,.28-.05.41a12.46,12.46,0,0,1,.09,1.43A13.82,13.82,0,0,1,13.35,28ZM4.9,22.34A11.63,11.63,0,0,0,13.35,26,11.82,11.82,0,0,0,25.07,14.11,11.42,11.42,0,0,0,25,12.77a1.11,1.11,0,0,1,0-.26c0-.22.05-.43.06-.65a1,1,0,0,1,.22-.58l1.67-2.11H25.06a1,1,0,0,1-.85-.47,5.3,5.3,0,0,0-4.5-2.51,5.41,5.41,0,0,0-5.36,5.45,1.07,1.07,0,0,1-.4.83,1,1,0,0,1-.87.2A11.83,11.83,0,0,1,6,7,10,10,0,0,0,8.57,20.12a1,1,0,0,1,.37,1.05,1,1,0,0,1-.83.74Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="shareIcon shareButton">
+                           <label for="offshare-check">
+                              <svg class="line" viewBox="0 0 24 24">
+                                 <path class="fill" d="M92.30583,264.72053a3.42745,3.42745,0,0,1-.37,1.57,3.51,3.51,0,1,1,0-3.13995A3.42751,3.42751,0,0,1,92.30583,264.72053Z" transform="translate(-83.28571 -252.73452)"></path>
+                                 <circle class="fill" cx="18.48892" cy="5.49436" r="3.51099"></circle>
+                                 <circle class="fill" cx="18.48892" cy="18.50564" r="3.51099"></circle>
+                                 <line class="cls-3" x1="12.53012" x2="8.65012" y1="8.476" y2="10.416"></line>
+                                 <line class="cls-3" x1="12.53012" x2="8.65012" y1="15.496" y2="13.556"></line>
+                              </svg>
+                           </label>
+                        </div>
+                     </div>
+                     <input class="shareIn hidden" id="offshare-check" type="checkbox">
+                     <div class="shareInner">
+                        <div class="shareBlock">
+                           <div class="shareHeader" data-text="Share to other apps">
+                              <label for="offshare-check">
+                                 <svg class="line" viewBox="0 0 24 24">
+                                    <line x1="18" x2="6" y1="6" y2="18"></line>
+                                    <line x1="6" x2="18" y1="6" y2="18"></line>
+                                 </svg>
+                              </label>
+                           </div>
+                           <div class="shareBox">
+                              <ul>
+
+                                 <li>
+                                    <div>
+                           <a aria-label="Twitter" data-text="Twitter" href="https://twitter.com/intent/tweet?url=https://calculadoraes.com/&text=Calculadora%20-%20Calculadora%20cient%C3%ADfica%20y%20financiera%20GRATUITA%20en%20l%C3%ADnea&via=DevDasPratap" rel="noopener" role="button" target="_blank" title="Share to Twitter">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M13.35,28A13.66,13.66,0,0,1,2.18,22.16a1,1,0,0,1,.69-1.56l2.84-.39A12,12,0,0,1,5.44,4.35a1,1,0,0,1,1.7.31,9.87,9.87,0,0,0,5.33,5.68,7.39,7.39,0,0,1,7.24-6.15,7.29,7.29,0,0,1,5.88,3H29a1,1,0,0,1,.9.56,1,1,0,0,1-.11,1.06L27,12.27c0,.14,0,.28-.05.41a12.46,12.46,0,0,1,.09,1.43A13.82,13.82,0,0,1,13.35,28ZM4.9,22.34A11.63,11.63,0,0,0,13.35,26,11.82,11.82,0,0,0,25.07,14.11,11.42,11.42,0,0,0,25,12.77a1.11,1.11,0,0,1,0-.26c0-.22.05-.43.06-.65a1,1,0,0,1,.22-.58l1.67-2.11H25.06a1,1,0,0,1-.85-.47,5.3,5.3,0,0,0-4.5-2.51,5.41,5.41,0,0,0-5.36,5.45,1.07,1.07,0,0,1-.4.83,1,1,0,0,1-.87.2A11.83,11.83,0,0,1,6,7,10,10,0,0,0,8.57,20.12a1,1,0,0,1,.37,1.05,1,1,0,0,1-.83.74Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                                 </li>
+                                 <li>
+                        <div>
+                           <a aria-label="Share on Facebook" data-text="Facebook" href="https://www.facebook.com/sharer.php?u=https://calculadoraes.com/" rel="noopener" role="button" target="_blank">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H17V18h4a1,1,0,0,0,0-2H17V14a2,2,0,0,1,2-2h2a1,1,0,0,0,0-2H19a4,4,0,0,0-4,4v2H12a1,1,0,0,0,0,2h3v9H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                                </li>
+                                 <li>
+                                    <div>
+                           <a aria-label="Share on Whatsapp" data-text="Whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fcalculadoraes.com%2F" rel="noopener" role="button" target="_blank">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z"></path>
+                                 <path d="M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                                 </li>
+
+                                 <li>
+                                    <div class="copyLink" data-text="Copy link" onclick="copyFunction()">
+                                       <svg class="line" viewBox="0 0 24 24">
+                                          <g transform="translate(3.649800, 2.749900)">
+                                             <line x1="10.6555" x2="5.2555" y1="12.6999" y2="12.6999"></line>
+                                             <line x1="8.6106" x2="5.2546" y1="8.6886" y2="8.6886"></line>
+                                             <path d="M16.51,5.55 L10.84,0.15 C10.11,0.05 9.29,0 8.39,0 C2.1,0 -1.95399252e-14,2.32 -1.95399252e-14,9.25 C-1.95399252e-14,16.19 2.1,18.5 8.39,18.5 C14.69,18.5 16.79,16.19 16.79,9.25 C16.79,7.83 16.7,6.6 16.51,5.55 Z"></path>
+                                             <path d="M10.2844,0.0827 L10.2844,2.7437 C10.2844,4.6017 11.7904,6.1067 13.6484,6.1067 L16.5994,6.1067"></path>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                    <input id="getlink" readonly="readonly" type="text" value="https://calculadoraes.com/">
+                                    <div class="shareNotif" id="shareNotif"></div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <label class="fullClose" for="offshare-check"></label>
+                     </div>
+                  </div>
+                  <!-- <img src="assets/ad-rectangle.jpg" width="100%;"> -->
+               </main>
+               <!-- SIDEBAR -->
+               <!-- <aside class='sidebar'>
+                  <img src="assets/ad-square.jpg" width="100%;">
+                  <img src="assets/ad-square.jpg" width="100%;">
+                  <img src="assets/ad-square.jpg" width="100%;">
+               </aside> -->
+            </div>
+         </div>
+         <div class="section" id="mobile-menu">
+            <div class="widget LinkList" data-version="2" id="LinkList003">
+               <ul class="mobileMenu">
+                  <li class="mHome">
+                     <a aria-label="Home" href="https://calculadoraes.com/" role="button">
+                        <svg class="line" viewBox="0 0 24 24">
+                           <g transform="translate(2.400000, 2.000000)">
+                              <path class="fill" d="M1.24344979e-14,11.713 C1.24344979e-14,6.082 0.614,6.475 3.919,3.41 C5.365,2.246 7.615,0 9.558,0 C11.5,0 13.795,2.235 15.254,3.41 C18.559,6.475 19.172,6.082 19.172,11.713 C19.172,20 17.213,20 9.586,20 C1.959,20 1.24344979e-14,20 1.24344979e-14,11.713 Z"></path>
+                           </g>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="mDark">
+                     <div onclick="darkMode()">
+                        <svg class="line" viewBox="0 0 24 24">
+                           <path class="fill" d="M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z" transform="translate(-169.3959 -166.45548)"></path>
+                        </svg>
+                     </div>
+                  </li>
+                  <li class="mNav">
+                     <label for="offnav-input">
+                        <svg class="line" viewBox="0 0 24 24">
+                           <g transform="translate(3.000000, 3.000000)">
+                              <path class="fill" d="M18.00036,3.6738 C18.00036,5.7024 16.35516,7.3476 14.32656,7.3476 C12.29796,7.3476 10.65366,5.7024 10.65366,3.6738 C10.65366,1.6452 12.29796,-6.39488462e-15 14.32656,-6.39488462e-15 C16.35516,-6.39488462e-15 18.00036,1.6452 18.00036,3.6738 Z"></path>
+                              <path class="fill" d="M7.3467,3.6738 C7.3467,5.7024 5.7024,7.3476 3.6729,7.3476 C1.6452,7.3476 4.79616347e-15,5.7024 4.79616347e-15,3.6738 C4.79616347e-15,1.6452 1.6452,-6.39488462e-15 3.6729,-6.39488462e-15 C5.7024,-6.39488462e-15 7.3467,1.6452 7.3467,3.6738 Z"></path>
+                              <path class="fill" d="M18.00036,14.26194 C18.00036,16.29054 16.35516,17.93484 14.32656,17.93484 C12.29796,17.93484 10.65366,16.29054 10.65366,14.26194 C10.65366,12.23334 12.29796,10.58814 14.32656,10.58814 C16.35516,10.58814 18.00036,12.23334 18.00036,14.26194 Z"></path>
+                              <path class="fill" d="M7.3467,14.26194 C7.3467,16.29054 5.7024,17.93484 3.6729,17.93484 C1.6452,17.93484 4.79616347e-15,16.29054 4.79616347e-15,14.26194 C4.79616347e-15,12.23334 1.6452,10.58814 3.6729,10.58814 C5.7024,10.58814 7.3467,12.23334 7.3467,14.26194 Z"></path>
+                           </g>
+                        </svg>
+                     </label>
+                  </li>
+                  <li class="shareButton">
+                     <label for="offshare-check">
+                        <svg class="line" viewBox="0 0 24 24">
+                           <path class="fill" d="M92.30583,264.72053a3.42745,3.42745,0,0,1-.37,1.57,3.51,3.51,0,1,1,0-3.13995A3.42751,3.42751,0,0,1,92.30583,264.72053Z" transform="translate(-83.28571 -252.73452)"></path>
+                           <circle class="fill" cx="18.48892" cy="5.49436" r="3.51099"></circle>
+                           <circle class="fill" cx="18.48892" cy="18.50564" r="3.51099"></circle>
+                           <line class="cls-3" x1="12.53012" x2="8.65012" y1="8.476" y2="10.416"></line>
+                           <line class="cls-3" x1="12.53012" x2="8.65012" y1="15.496" y2="13.556"></line>
+                        </svg>
+                     </label>
+                  </li>
+                  <li class="mTop">
+                     <div onclick="window.scrollTo({top: 0});">
+                        <svg class="line" viewBox="0 0 24 24">
+                           <g transform="translate(2.500000, 3.000000)">
+                              <path class="fill" d="M9.5,18 C3.00557739,18 0.456662548,17.5386801 0.0435259337,15.2033146 C-0.36961068,12.8679491 2.27382642,8.47741935 3.08841712,7.02846996 C5.81256986,2.18407813 7.66371927,0 9.5,0 C11.3362807,0 13.1874301,2.18407813 15.9115829,7.02846996 C16.7261736,8.47741935 19.3696107,12.8679491 18.9564741,15.2033146 C18.5443995,17.5386801 15.9944226,18 9.5,18 Z"></path>
+                           </g>
+                        </svg>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <footer class='sectionInner'>
+            <div class='creditInner'>
+              <p>&#169; <span id='getYear'></span> &#8231; <a class="hyperlink" href='https://calculadoraes.com/'>Calculadora</a>. Reservados todos los derechos. Hecho con ❤️ <a class="hyperlink" href='https://twitter.com/DevDasPratap'>Follow</a></p>
+               <div class='toTop' onclick='window.scrollTo({top: 0});'>
+               <div class='toTop' onclick='window.scrollTo({top: 0});'>
+                  <svg class='line' viewBox='0 0 24 24'>
+                     <g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                        <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                     </g>
+                  </svg>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script type="text/javascript">
+         $(function(){
+            var pc = $('.currency').first().text();
+            $('#currency').change(function(){
+               $('.currency').text(this.value);
+            });
+         })
+      </script>
+   </body>
+</html>

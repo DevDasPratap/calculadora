@@ -1,0 +1,38 @@
+.sci {
+	width: 100%;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.result-box {
+	padding: 10px;
+	font-size: 30px;
+	text-align: right;
+	font-family: consolas;
+	margin: 10px auto;
+}
+
+.buttons-row {
+	width: 100%;
+	display: block;
+	font-family: consolas;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.buttons {
+	width: 18%;
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.1) inset;
+	background: #f4f4f4;
+	color: #000;
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
+}
+
+.buttons input {
+	margin-right: 10px; 
+}
