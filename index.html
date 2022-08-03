@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <!-- META TAGS -->
     <meta charset='UTF-8' />
     <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
-    <meta content='IE=edge' http-equiv='X-UA-Compatible' />
-    <!-- Primary Meta Tags -->
+    <meta content='IE=edge' http-equiv='X-UA-Compatible' /> <!-- Primary Meta Tags -->
     <title>Calculadora Online- cientifica, de integrales, derivadas, ecuaciones, fracciones</title>
     <meta name="description" content="Calculadora online - científica(cientifica), de integrales, de derivadas, de ecuaciones, de fracciones, clausula suelo. calcular todo tipo de cálculos.">
-    <meta name="keywords" content="calculadora, calculadora online, calculadora de integrales, calculadora científica, calculadora cientifica, calculadora de derivadas, calculadora de ecuaciones, calculadora de fracciones, calculadora clausula suelo, calculadora integrales">
-    <!-- CSS FILES -->
+    <meta name="keywords" content="calculadora, calculadora online, calculadora de integrales, calculadora científica, calculadora cientifica, calculadora de derivadas, calculadora de ecuaciones, calculadora de fracciones, calculadora clausula suelo, calculadora integrales"> <!-- CSS FILES -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style.min.css">
     <link rel="stylesheet" type="text/css" href="assets/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/style2.css">
-    <!-- JS FILES -->
+    <link rel="stylesheet" type="text/css" href="assets/style2.css"> <!-- JS FILES -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -24,611 +22,328 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="manifest" href="./assets/favicon/site.webmanifest"> <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159916343-8"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-159916343-8');
+        window.dataLayer = window.dataLayer || [];
+        
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-159916343-8');
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script>
-  </head>
-  <body class='onIndex onHome' id='mainContent'>
-    <input class='navInput hidden' id='offnav-input' type='checkbox' />
+</head>
+
+<body class='onIndex onHome' id='mainContent'> <input class='navInput hidden' id='offnav-input' type='checkbox' />
     <div class='mainWrapper'>
-      <header class='header' id='header'>
-        <div class='headerContent'>
-          <div class='headerDiv headerLeft'>
-            <div class='headerIcon'>
-              <label aria-label='Menu Navigation' class='navMenu' for='offnav-input'>
-                <svg class='line svg-1' viewBox='0 0 24 24'>
-                  <line x1='3' x2='21' y1='12' y2='12'></line>
-                  <line x1='3' x2='21' y1='6' y2='6'></line>
-                  <line x1='3' x2='21' y1='18' y2='18'></line>
-                </svg>
-                <svg class='line svg-2' viewBox='0 0 24 24'>
-                  <g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
-                    <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-                  </g>
-                </svg>
-              </label>
-            </div>
-            <div class='section' id='header-widget'>
-              <div class='widget Header' data-version='2' id='Header1'>
-                <div class='headerInner'>
-                  <h2>
-                    <span class='headerTitle'>
-                      <a class="hyperlink" href="https://calculadora.work/">Calculadora</a>
-                    </span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='headerDiv headerRight'>
-            <div class='headerIcon'>
-              <span aria-label='Dark' class='navDark' data-text='Dark' onclick='darkMode()' role='button'>
-                <i></i>
-              </span>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class='mainMenu'>
-        <div class='section' id='main-menu'>
-          <div class='widget HTML' data-version='2' id='HTML000'>
-            <ul class='htmlMenu' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement'>
-              <li class='close'>
-                <label class='link' for='offnav-input'>
-                  <svg class='line' viewBox='0 0 24 24'>
-                    <g transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
-                      <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-                    </g>
-                  </svg>
-                  <span class='name' data-text='Back'></span>
-                </label>
-              </li>
-              <li class='dropDown break'>
-                <input class='dropMenu hidden' id='offdropMenu2' name='dropDown' type='checkbox' />
-                <label class='link' for='offdropMenu2'>
-                  <svg class='line' viewBox='0 0 24 24'>
-                    <g transform='translate(2.500000, 2.500000)'>
-                      <line x1='6.6787' x2='12.4937' y1='12.0742685' y2='12.0742685'></line>
-                      <path d='M-1.13686838e-13,5.29836453 C-1.13686838e-13,2.85645977 1.25,0.75931691 3.622,0.272650243 C5.993,-0.214968804 7.795,-0.0463973758 9.292,0.761221672 C10.79,1.56884072 10.361,2.76122167 11.9,3.63645977 C13.44,4.51265024 15.917,3.19645977 17.535,4.94217405 C19.229,6.7697931 19.2200005,9.57550739 19.2200005,11.3640788 C19.2200005,18.1602693 15.413,18.6993169 9.61,18.6993169 C3.807,18.6993169 -1.13686838e-13,18.2288407 -1.13686838e-13,11.3640788 L-1.13686838e-13,5.29836453 Z'></path>
-                    </g>
-                  </svg>
-                  <span class='name'>Calculadora</span>
-                  <svg class='line down' viewBox='0 0 24 24'>
-                    <g transform='translate(5.000000, 8.500000)'>
-                      <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-                    </g>
-                  </svg>
-                </label>
-                <ul>
-                  <li itemprop='name'>
-                    <a href='https://calculadora.work/' itemprop='url'>Calculadora</a>
-                  </li>
-                  <li itemprop='name'>
-                    <a href='https://calculadora.work/calculadora-de-hipoteca' itemprop='url'>Calculadora de hipoteca</a>
-                  </li>
-                  <li itemprop='name'>
-                    <a href='https://calculadora.work/calculadora-sueldo-neto' itemprop='url'>Calculadora sueldo neto</a>
-                  </li>
-                  <li itemprop='name'>
-                    <a href='https://calculadora.work/calculadora-de-préstamo' itemprop='url'>Calculadora de préstamo</a>
-                  </li>
-                  <li itemprop='name'>
-                    <a href='https://calculadora.work/calculadora-de-interés-compuesto' itemprop='url'>Calculadora de interés compuesto</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/' itemprop='url'>
-                  <span class='name' itemprop='name'>Calculadora</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/calculadora-de-hipoteca' itemprop='url'>
-                  <span class='name' itemprop='name'>Calculadora de hipoteca</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/calculadora-sueldo-neto' itemprop='url'>
-                  <span class='name' itemprop='name'>Calculadora sueldo neto</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/calculadora-de-préstamo' itemprop='url'>
-                  <span class='name' itemprop='name'>Calculadora de préstamo</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/calculadora-de-interés-compuesto' itemprop='url'>
-                  <span class='name' itemprop='name'>Calculadora de interés compuesto</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/calculadora-de-préstamo' itemprop='url'>
-                  <span class='name' itemprop='name'>Calculadora de reembolso de préstamos</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/privacy-policy' itemprop='url'>
-                  <span class='name' itemprop='name'>Privacy Policy</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/disclaimer' itemprop='url'>
-                  <span class='name' itemprop='name'>Disclaimer</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://calculadora.work/about' itemprop='url'>
-                  <svg class='line' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-                    <g transform='translate(2.749500, 2.549500)'>
-                      <path d='M6.809,18.9067 C3.137,18.9067 9.41469125e-14,18.3517 9.41469125e-14,16.1277 C9.41469125e-14,13.9037 3.117,11.8997 6.809,11.8997 C10.481,11.8997 13.617,13.8847 13.617,16.1077 C13.617,18.3307 10.501,18.9067 6.809,18.9067 Z'></path>
-                      <path d='M6.809,8.728 C9.219,8.728 11.173,6.774 11.173,4.364 C11.173,1.954 9.219,-2.48689958e-14 6.809,-2.48689958e-14 C4.399,-2.48689958e-14 2.44496883,1.954 2.44496883,4.364 C2.436,6.766 4.377,8.72 6.778,8.728 L6.809,8.728 Z'></path>
-                      <path d='M14.0517,7.5293 C15.4547,7.1543 16.4887007,5.8753 16.4887007,4.3533 C16.4897,2.7653 15.3627,1.4393 13.8647,1.1323'></path>
-                      <path d='M14.7113,11.104 C16.6993,11.104 18.3973,12.452 18.3973,13.655 C18.3973,14.364 17.8123,15.092 16.9223,15.301'></path>
-                    </g>
-                  </svg>
-                  <span class='name' itemprop='name'>About</span>
-                </a>
-              </li>
-              <li class='break'>
-                <a class='link' href='https://calculadora.work/contact' itemprop='url'>
-                  <svg class='line' viewBox='0 0 24 24'>
-                    <g transform='translate(2.452080, 2.851980)'>
-                      <path d='M15.0928322,6.167017 C15.0928322,6.167017 11.8828071,10.0196486 9.53493746,10.0196486 C7.18807029,10.0196486 3.941955,6.167017 3.941955,6.167017'></path>
-                      <path d='M1.04805054e-13,9.11679198 C1.04805054e-13,2.27869674 2.38095238,8.8817842e-15 9.52380952,8.8817842e-15 C16.6666667,8.8817842e-15 19.047619,2.27869674 19.047619,9.11679198 C19.047619,15.9538847 16.6666667,18.233584 9.52380952,18.233584 C2.38095238,18.233584 1.04805054e-13,15.9538847 1.04805054e-13,9.11679198 Z'></path>
-                    </g>
-                  </svg>
-                  <span class='name' itemprop='name'>Contact</span>
-                </a>
-              </li>
-              <li>
-                <a class='link' href='https://twitter.com/DevDasPratap/' itemprop='url'>
-                  <span class='name' itemprop='name'>Follow</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <label class='fullClose menu' for='offnav-input'></label>
-      </div>
-      <div class='mainInner sectionInner'>
-        <div class='blogContent'>
-          <!-- CONTENT AREA -->
-          <main class='mainbar'>
-            <div class="sci">
-              <div class="result-box">
-                <div id="sciInPut">&nbsp;</div>
-                <div id="sciOutPut">0</div>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r('sin')" class="buttons">sin</span>
-                <span onclick="r('cos')" class="buttons">cos</span>
-                <span onclick="r('tan')" class="buttons">tan</span>
-                <span class="buttons">
-                  <label for="scirdsettingd">
-                    <input id="scirdsettingd" type="radio" name="scirdsetting" value="deg" onclick="cnDegreeRadians='degree';" checked="">Deg </label>
-                </span>
-                <span class="buttons">
-                  <label for="scirdsettingr">
-                    <input id="scirdsettingr" type="radio" name="scirdsetting" value="rad" onclick="cnDegreeRadians='radians';">Rad </label>
-                </span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r('asin')" class="buttons">sin <sup>-1</sup>
-                </span>
-                <span onclick="r('acos')" class="buttons">cos <sup>-1</sup>
-                </span>
-                <span onclick="r('atan')" class="buttons">tan <sup>-1</sup>
-                </span>
-                <span onclick="r('pi')" class="buttons">π</span>
-                <span onclick="r('e')" class="buttons">e</span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r('pow')" class="buttons">x <sup>y</sup>
-                </span>
-                <span onclick="r('x3')" class="buttons">x <sup>3</sup>
-                </span>
-                <span onclick="r('x2')" class="buttons">x <sup>2</sup>
-                </span>
-                <span onclick="r('ex')" class="buttons">e <sup>x</sup>
-                </span>
-                <span onclick="r('10x')" class="buttons">10 <sup>x</sup>
-                </span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r('apow')" class="buttons">
-                  <sup>y</sup>√x </span>
-                <span onclick="r('3x')" class="buttons">
-                  <sup>3</sup>√x </span>
-                <span onclick="r('sqrt')" class="buttons">√x</span>
-                <span onclick="r('ln')" class="buttons">ln</span>
-                <span onclick="r('log')" class="buttons">log</span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r('(')" class="buttons">(</span>
-                <span onclick="r(')')" class="buttons">)</span>
-                <span onclick="r('1/x')" class="buttons">1/x</span>
-                <span onclick="r('pc')" class="buttons">%</span>
-                <span onclick="r('n!')" class="buttons">n!</span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r(7)" class="buttons" style="background-color: #000; color: white">7</span>
-                <span onclick="r(8)" class="buttons" style="background-color: #000; color: white">8</span>
-                <span onclick="r(9)" class="buttons" style="background-color: #000; color: white">9</span>
-                <span onclick="r('+')" class="buttons">+</span>
-                <span onclick="r('bk')" class="buttons" style="background-color: #2d5cdf; color: white">Back(⬅️)</span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r(4)" class="buttons" style="background-color: #000; color: white">4</span>
-                <span onclick="r(5)" class="buttons" style="background-color: #000; color: white">5</span>
-                <span onclick="r(6)" class="buttons" style="background-color: #000; color: white">6</span>
-                <span onclick="r('-')" class="buttons">–</span>
-                <span onclick="r('ans')" class="buttons">Ans</span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r(1)" class="buttons" style="background-color: #000; color: white">1</span>
-                <span onclick="r(2)" class="buttons" style="background-color: #000; color: white">2</span>
-                <span onclick="r(3)" class="buttons" style="background-color: #000; color: white">3</span>
-                <span onclick="r('*')" class="buttons">×</span>
-                <span onclick="r('M+')" class="buttons">M+</span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r(0)" class="buttons" style="background-color: #000; color: white">0</span>
-                <span onclick="r('.')" class="buttons">.</span>
-                <span onclick="r('EXP')" class="buttons">EXP</span>
-                <span onclick="r('/')" class="buttons">÷</span>
-                <span onclick="r('M-')" class="buttons">M-</span>
-              </div>
-              <div class="buttons-row">
-                <span onclick="r('+/-')" class="buttons">±</span>
-                <span onclick="r('RND')" class="buttons">RND</span>
-                <span onclick="r('C')" class="buttons" style="background-color: #2d5cdf; color: white">AC</span>
-                <span onclick="r('=')" class="buttons" style="background-color: #2ecc71; color: white; font-weight: bold;">=</span>
-                <span onclick="r('MR')" class="buttons" id="scimrc">MR</span>
-              </div>
-            </div>
-            <h4>Historial de cálculo: </h4>
-            <div id="scihistory"></div>
-            <h1>Computadora en línea</h1>
-            <p>Una calculadora científica es una de las mejores calculadoras para cálculos rápidos y fáciles. Sitio web aquí podemos calcular casi todo tipo de cosas matemáticas. Puede utilizar este sitio para fines científicos, matemáticos, contables y comerciales.</p>
-            <p>La calculadora proporciona funciones matemáticas simples y avanzadas en un hermoso diseño.</p>
-            <h2>Calculadora - Calculadora científica / matemática GRATUITA en línea</h2>
-            <ul>
-              <li>
-                <strong>AC = Todo claro</strong>
-              </li>
-              <li>
-                <strong>mc = Borrar memoria</strong>
-              </li>
-              <li>
-                <strong>m+ = Memory Plus</strong>
-              </li>
-              <li>
-                <strong>m- = Menos memoria</strong>
-              </li>
-              <li>
-                <strong>mr = Recuperacion de memoria</strong>
-              </li>
-              <li>
-                <strong>CE = Entrada clara</strong>
-              </li>
-              <li>
-                <strong>√x = Raíz cuadrada</strong>
-              </li>
-              <li>
-                <strong>AC = Todo claro</strong>
-              </li>
-              <li>
-                <strong>e <sup>x</sup> = exponencial, eleva e a la potencia x </strong>
-              </li>
-              <li>
-                <strong>1/x or x <sup>−1</sup> = Una multiplicativa inversa o recíproca de un número x </strong>
-              </li>
-              <li>
-                <strong>x² = Cuadrada</strong>
-              </li>
-              <li>
-                <strong>() = Paréntesis, indica a la calculadora que haga esta operación primero</strong>
-              </li>
-              <li>
-                <strong>y <sup>x</sup> or x <sup>y</sup> = y elevado a la potencia x o x elevado a la y </strong>
-              </li>
-              <li>
-                <strong>y√x = La función padre de una función de raíz cuadrada es y = √x</strong>
-              </li>
-              <li>
-                <strong>tan <sup>-1</sup> = La inversa de la tangente se denota como Arctangent o en una calculadora aparecerá como atan or tan <sup>-1</sup>
-                </strong>
-              </li>
-              <li>
-                <strong>cos <sup>-1</sup> = Se llama acos y arccos </strong>
-              </li>
-              <li>
-                <strong>sin <sup>-1</sup> = Función de seno inverso or Sin <sup>-1</sup> toma la relación, Lado opuesto / Lado hipotenusa y produce el ángulo θ. También está escrito como arcsin </strong>
-              </li>
-              <li>
-                <strong>ln = La función de registro es Ln(x) = Log(x)/Log(e)</strong>
-              </li>
-              <li>
-                <strong>Rad = Radianes</strong>
-              </li>
-              <li>
-                <strong>Deg = Grados</strong>
-              </li>
-              <li>
-                <strong>e = E (or e) representa el exponente de 10</strong>
-              </li>
-              <li>
-                <strong>RND = Da un número aleatorio en (0,1)</strong>
-              </li>
-              <li>
-                <strong>EXP = Significa exponente (haga clic en el botón Asp que encontrará en la mitad izquierda del teclado de la calculadora)</strong>
-              </li>
-              <li>
-                <strong>± = Operaciones tanto positivas como negativas</strong>
-              </li>
-            </ul>
-            <h2>Calculadora: todo lo que debes saber sobre ella</h2>
-            <p>Las calculadoras son herramientas incre&iacute;blemente &uacute;tiles que nos ayudan a hacer c&aacute;lculos y resolver problemas matem&aacute;ticos. Aunque hoy en d&iacute;a la mayor&iacute;a de la gente usa calculadoras digitales, tambi&eacute;n existen calculadoras anal&oacute;gicas y mec&aacute;nicas. Aunque pueden parecer diferentes, todas las calculadoras funcionan de la misma manera: utilizan n&uacute;meros y operaciones para ayudarnos a resolver problemas.</p>
-            <p>La calculadora cient&iacute;fica se utiliza en la ense&ntilde;anza de las ciencias, la ingenier&iacute;a y las matem&aacute;ticas, as&iacute; como en el comercio, las finanzas y otros campos empresariales. Adem&aacute;s, son ampliamente utilizadas por estudiantes en escuelas de todo el mundo.</p>
-            <p>&iquest;Quieres saber m&aacute;s sobre las calculadoras? Aqu&iacute; te lo contamos todo.</p>
-            <h2>Historia de la calculadora</h2>
-            <p>Las calculadoras han existido desde hace mucho tiempo. La primera calculadora fue inventada por el matem&aacute;tico griego Arqu&iacute;medes en el siglo III a. C. La calculadora de Arqu&iacute;medes era una rueda de dentado que se pod&iacute;a usar para hacer c&aacute;lculos de &aacute;rea y volumen. Aunque era muy rudimentario, este invento fue un gran avance en el campo de la matem&aacute;tica.</p>
-            
-            <p>En el siglo XVI, el matem&aacute;tico italiano Gerolamo Cardano invent&oacute; la primera calculadora mec&aacute;nica. Cardano llam&oacute; a su invento la &laquo;m&aacute;quina aritm&eacute;tica&raquo;. Su m&aacute;quina era capaz de hacer sumas, restas, multiplicaciones y divisiones. Aunque era un gran avance, la m&aacute;quina de Cardano era muy lenta y complicada de usar.</p>
-            
-            <p>En 1623, el matem&aacute;tico alem&aacute;n Wilhelm Schickard invent&oacute; la primera calculadora mec&aacute;nica capaz de imprimir los resultados. Esta calculadora se conoci&oacute; como la &laquo;calculadora de Schickard&raquo;.</p>
-            <p>La primera calculadora que pod&iacute;a hacer algo m&aacute;s que sumas fue inventada por Charles Xavier Thomas en 1820. Esta calculadora ten&iacute;a seis funciones diferentes y estaba hecha de madera con engranajes de metal en su interior.</p>
-            <p>En 1878, William Seward Burroughs cre&oacute; una calculadora que pod&iacute;a realizar cuatro funciones diferentes: suma, resta, multiplicaci&oacute;n y divisi&oacute;n. &iexcl;Y luego, en 1890, tambi&eacute;n agreg&oacute; ra&iacute;ces cuadradas a su calculadora!</p>
-            <p>Las calculadoras se utilizaron por primera vez para matem&aacute;ticas avanzadas y c&aacute;lculos cient&iacute;ficos en el siglo XIX. La primera calculadora electr&oacute;nica fue construida por John Vincent Atanasoff y Clifford Berry en 1939. La llamaron &quot;ABC&quot;.</p>
-            <p>Hoy en d&iacute;a, una calculadora cient&iacute;fica es un tipo de calculadora que puede hacer m&aacute;s que la aritm&eacute;tica b&aacute;sica. Puede resolver ecuaciones, realizar funciones trigonom&eacute;tricas y funciones logar&iacute;tmicas.</p>
-            <h2>&iquest;Qu&eacute; es la calculadora de Alicia?</h2>
-            <p>La calculadora Alicia es la soluci&oacute;n perfecta para ayudarte con tus deberes de matem&aacute;ticas. Cuenta con una interfaz sencilla y f&aacute;cil de usar y una amplia gama de funciones que te har&aacute;n la vida m&aacute;s f&aacute;cil.</p>
-            
-            <p>Viene con un solucionador de ecuaciones, una calculadora cient&iacute;fica, un conversor de unidades, un conversor de divisas y mucho m&aacute;s.</p>
-            
-            <p>Cuando la abras por primera vez, ver&aacute;s una pantalla como &eacute;sta:</p>
-            
-            <p>Puedes escribir tu expresi&oacute;n o ecuaci&oacute;n utilizando el teclado que aparece en la parte inferior de la pantalla. Si haces clic en uno de estos botones, aparecer&aacute; en la parte superior de la pantalla para que no tengas que escribirlo todo manualmente.</p>
-            
-            <p>Si pulsas enter despu&eacute;s de introducir una ecuaci&oacute;n o expresi&oacute;n, &iexcl;la resolver&aacute; autom&aacute;ticamente por ti!</p>
-            
-            <p>As&iacute; mismo, la calculadora de Alicia tiene una variedad de caracter&iacute;sticas que pueden ayudar a los estudiantes a resolver problemas matem&aacute;ticos. Puede mostrar los pasos para resolver un problema, proporcionar sugerencias e incluso proporcionar la respuesta cuando sea necesario.</p>
-            
-            <p>Adem&aacute;s, &iquest;sab&iacute;as que la calculadora Alicia cient&iacute;fica fue desarrollada por la Universidad de Texas en Austin? As&iacute; es, fue creado para ayudar a los estudiantes a explorar conceptos matem&aacute;ticos y cient&iacute;ficos a trav&eacute;s de la experimentaci&oacute;n. La calculadora se ha traducido a m&aacute;s de 30 idiomas, incluidos espa&ntilde;ol, portugu&eacute;s, alem&aacute;n, franc&eacute;s, holand&eacute;s, coreano, checo y turco.</p>
-            <h2>Calculadora Alicia cient&iacute;fica</h2>
-            <p>La mayor&iacute;a de las calculadoras cient&iacute;ficas tienen varias opciones que le permiten hacer uso de ellas en su d&iacute;a a d&iacute;a. La opci&oacute;n m&aacute;s popular es la divisi&oacute;n, que se utiliza para dividir una cantidad por otra. Tambi&eacute;n hay una funci&oacute;n de exponente, que permite al usuario convertir un n&uacute;mero en su exponencial equivalente.</p>
-            
-            <p>La calculadora cient&iacute;fica Alicia es una calculadora cient&iacute;fica potente y de alta calidad que est&aacute; lista para funcionar.</p>
-            
-            <p>Con un dise&ntilde;o elegante y una interfaz intuitiva, es f&aacute;cil de usar y r&aacute;pida de aprender. Sus grandes teclas son f&aacute;ciles de pulsar y hacen que los c&aacute;lculos sean m&aacute;s f&aacute;ciles que nunca.</p>
-            
-            <p>La calculadora cient&iacute;fica Alicia est&aacute; dise&ntilde;ada por profesores, para profesores. Tiene todas las funciones que necesitas para resolver problemas complejos con facilidad: c&aacute;lculos de fracciones, funciones trigonom&eacute;tricas (incluyendo cotangente, seno/coseno), potencias/ra&iacute;ces enteras, modo de radianes para n&uacute;meros complejos (incluyendo conjugados complejos), &iexcl;y mucho m&aacute;s! Incluso puede convertir entre n&uacute;meros decimales, binarios, hexadecimales, octales y hexadecimales.</p>
-            
-            <p>Adem&aacute;s de ser una excelente calculadora para la escuela o el trabajo, este modelo tambi&eacute;n es ideal para las personas que desean una calculadora cient&iacute;fica sencilla pero potente que se vea bien en su escritorio o que pueda caber en su bolsillo cuando est&aacute;n de viaje.</p>
-            <h2>Conclusi&oacute;n</h2>
-            <p>&iquest;Qui&eacute;n no ha usado una calculadora alguna vez en su vida? Las calculadoras son uno de esos inventos que han cambiado la forma en que hacemos las cosas. Ahora, con un simple toque de un bot&oacute;n, podemos obtener la respuesta a cualquier pregunta matem&aacute;tica. Esto nos permite ahorrar tiempo y esfuerzo, y nos permite concentrarnos en lo que realmente importa. Las calculadoras han simplificado nuestras vidas de una manera que nunca hubi&eacute;ramos imaginado.&nbsp;</p>
-            
-            <p>&iexcl;Gracias, calculadoras! Sin duda, son una de las mejores invenciones de todos los tiempos.</p>
-            <h2>¿Propósito de usar una calculadora?</h2>
-            <p>Utilice esta calculadora para matemáticas con suma, resta, división y multiplicación; las calculadoras científicas incluyen exponentes, logaritmo, logaritmo natural (ln), funciones trigonométricas y memoria.</p>
-            <p>Este sitio web es lo único bastante fácil que tiene que hacer que simplemente seleccione el número, operador, función, etc.con el mouse o si está usando un teléfono móvil, luego toque los números y seleccione sus parámetros como número, operador, función, etc.</p>
-            <p class="alert bg-primary" role="alert">Hola, 👋 Si desea utilizar este sitio web la próxima vez, marque (⭐) este sitio web. Y si este sitio web es útil para su familia o un amigo, envíelo (➥). Gracias 🙏</p>
-            <p>Calculadora online con más características, puede obtener: número redondo, multiplicación, división, resta, además de los números, tangente, seno, coseno, cotangente, y muchas otras operaciones. este sitio web calcula: calculadora, calculadora cientifica, calculadora sueldo neto, calculadora online, calculadora de integrales, calculadora de derivadas, calculadora hipoteca, imc calculadora, calculadora normal, calculadora embarazo, calculadora científica, calculadora de limites, calculadora integrales, calculadora de matrices, calculadora derivadas, calculadora de ecuaciones, calculadora de embarazo, calculadora de fracciones, calculadora descuento, calculadora salario neto, calculadora ovulacion, metabolismo basal calculadora, semana embarazo calculadora, calculadora matrices, calculadora del amor, calculadora ecuaciones, calculadora de camellos, calculadora percentil, calculadora bitcoin, calculadora hipoteca idealista, calculadora de calorias, calculadora tae, calculadora apiretal, calculadora cientifica online, calculadora de porcentajes, calculadora de iva, calculadora de ovulacion, calculadora intereses, calculadora prestamos, calculadora de alicia </p>
-            <div class="postShare" data-text="Share:">
-              <div class="shareContent" data-text="Share:">
-                <div class="shareIcon facebook">
-                  <a aria-label="Share on Facebook" data-text="Facebook" href="https://www.facebook.com/sharer.php?u=https://calculadora.work/" rel="noopener" role="button" target="_blank">
-                    <svg class="c-1" viewBox="0 0 32 32">
-                      <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H17V18h4a1,1,0,0,0,0-2H17V14a2,2,0,0,1,2-2h2a1,1,0,0,0,0-2H19a4,4,0,0,0-4,4v2H12a1,1,0,0,0,0,2h3v9H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="shareIcon whatsapp">
-                  <a aria-label="Share on Whatsapp" data-text="Whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fcalculadora.work%2F" rel="noopener" role="button" target="_blank">
-                    <svg class="c-1" viewBox="0 0 32 32">
-                      <path d="M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z"></path>
-                      <path d="M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z"></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="shareIcon twitter">
-                  <a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https://calculadora.work/&text=Calculadora%20-%20Calculadora%20cient%C3%ADfica%20y%20financiera%20GRATUITA%20en%20l%C3%ADnea&via=DevDasPratap" rel="noopener" role="button" target="_blank" title="Share to Twitter">
-                    <svg class="c-1" viewBox="0 0 32 32">
-                      <path d="M13.35,28A13.66,13.66,0,0,1,2.18,22.16a1,1,0,0,1,.69-1.56l2.84-.39A12,12,0,0,1,5.44,4.35a1,1,0,0,1,1.7.31,9.87,9.87,0,0,0,5.33,5.68,7.39,7.39,0,0,1,7.24-6.15,7.29,7.29,0,0,1,5.88,3H29a1,1,0,0,1,.9.56,1,1,0,0,1-.11,1.06L27,12.27c0,.14,0,.28-.05.41a12.46,12.46,0,0,1,.09,1.43A13.82,13.82,0,0,1,13.35,28ZM4.9,22.34A11.63,11.63,0,0,0,13.35,26,11.82,11.82,0,0,0,25.07,14.11,11.42,11.42,0,0,0,25,12.77a1.11,1.11,0,0,1,0-.26c0-.22.05-.43.06-.65a1,1,0,0,1,.22-.58l1.67-2.11H25.06a1,1,0,0,1-.85-.47,5.3,5.3,0,0,0-4.5-2.51,5.41,5.41,0,0,0-5.36,5.45,1.07,1.07,0,0,1-.4.83,1,1,0,0,1-.87.2A11.83,11.83,0,0,1,6,7,10,10,0,0,0,8.57,20.12a1,1,0,0,1,.37,1.05,1,1,0,0,1-.83.74Z"></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="shareIcon shareButton">
-                  <label for="offshare-check">
-                    <svg class="line" viewBox="0 0 24 24">
-                      <path class="fill" d="M92.30583,264.72053a3.42745,3.42745,0,0,1-.37,1.57,3.51,3.51,0,1,1,0-3.13995A3.42751,3.42751,0,0,1,92.30583,264.72053Z" transform="translate(-83.28571 -252.73452)"></path>
-                      <circle class="fill" cx="18.48892" cy="5.49436" r="3.51099"></circle>
-                      <circle class="fill" cx="18.48892" cy="18.50564" r="3.51099"></circle>
-                      <line class="cls-3" x1="12.53012" x2="8.65012" y1="8.476" y2="10.416"></line>
-                      <line class="cls-3" x1="12.53012" x2="8.65012" y1="15.496" y2="13.556"></line>
-                    </svg>
-                  </label>
-                </div>
-              </div>
-              <input class="shareIn hidden" id="offshare-check" type="checkbox">
-              <div class="shareInner">
-                <div class="shareBlock">
-                  <div class="shareHeader" data-text="Share to other apps">
-                    <label for="offshare-check">
-                      <svg class="line" viewBox="0 0 24 24">
-                        <line x1="18" x2="6" y1="6" y2="18"></line>
-                        <line x1="6" x2="18" y1="6" y2="18"></line>
-                      </svg>
-                    </label>
-                  </div>
-                  <div class="shareBox">
-                    <ul>
-                      <li>
-                        <div>
-                          <a aria-label="Twitter" data-text="Twitter" href="https://twitter.com/intent/tweet?url=https://calculadora.work/&text=Calculadora%20-%20Calculadora%20cient%C3%ADfica%20y%20financiera%20GRATUITA%20en%20l%C3%ADnea&via=DevDasPratap" rel="noopener" role="button" target="_blank" title="Share to Twitter">
-                            <svg class="c-1" viewBox="0 0 32 32">
-                              <path d="M13.35,28A13.66,13.66,0,0,1,2.18,22.16a1,1,0,0,1,.69-1.56l2.84-.39A12,12,0,0,1,5.44,4.35a1,1,0,0,1,1.7.31,9.87,9.87,0,0,0,5.33,5.68,7.39,7.39,0,0,1,7.24-6.15,7.29,7.29,0,0,1,5.88,3H29a1,1,0,0,1,.9.56,1,1,0,0,1-.11,1.06L27,12.27c0,.14,0,.28-.05.41a12.46,12.46,0,0,1,.09,1.43A13.82,13.82,0,0,1,13.35,28ZM4.9,22.34A11.63,11.63,0,0,0,13.35,26,11.82,11.82,0,0,0,25.07,14.11,11.42,11.42,0,0,0,25,12.77a1.11,1.11,0,0,1,0-.26c0-.22.05-.43.06-.65a1,1,0,0,1,.22-.58l1.67-2.11H25.06a1,1,0,0,1-.85-.47,5.3,5.3,0,0,0-4.5-2.51,5.41,5.41,0,0,0-5.36,5.45,1.07,1.07,0,0,1-.4.83,1,1,0,0,1-.87.2A11.83,11.83,0,0,1,6,7,10,10,0,0,0,8.57,20.12a1,1,0,0,1,.37,1.05,1,1,0,0,1-.83.74Z"></path>
-                            </svg>
-                          </a>
+        <header class='header' id='header'>
+            <div class='headerContent'>
+                <div class='headerDiv headerLeft'>
+                    <div class='headerIcon'> <label aria-label='Menu Navigation' class='navMenu' for='offnav-input'> <svg class='line svg-1' viewBox='0 0 24 24'>
+                                <line x1='3' x2='21' y1='12' y2='12'></line>
+                                <line x1='3' x2='21' y1='6' y2='6'></line>
+                                <line x1='3' x2='21' y1='18' y2='18'></line>
+                            </svg> <svg class='line svg-2' viewBox='0 0 24 24'>
+                                <g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                                    <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                                </g>
+                            </svg> </label> </div>
+                    <div class='section' id='header-widget'>
+                        <div class='widget Header' data-version='2' id='Header1'>
+                            <div class='headerInner'>
+                                <h2> <span class='headerTitle'> <a class="hyperlink" href="https://calculadora.work/">Calculadora</a> </span> </h2>
+                            </div>
                         </div>
-                      </li>
-                      <li>
-                        <div>
-                          <a aria-label="Share on Facebook" data-text="Facebook" href="https://www.facebook.com/sharer.php?u=https://calculadora.work/" rel="noopener" role="button" target="_blank">
-                            <svg class="c-1" viewBox="0 0 32 32">
-                              <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H17V18h4a1,1,0,0,0,0-2H17V14a2,2,0,0,1,2-2h2a1,1,0,0,0,0-2H19a4,4,0,0,0-4,4v2H12a1,1,0,0,0,0,2h3v9H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <a aria-label="Share on Whatsapp" data-text="Whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fcalculadora.work%2F" rel="noopener" role="button" target="_blank">
-                            <svg class="c-1" viewBox="0 0 32 32">
-                              <path d="M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z"></path>
-                              <path d="M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z"></path>
-                            </svg>
-                          </a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="copyLink" data-text="Copy link" onclick="copyFunction()">
-                          <svg class="line" viewBox="0 0 24 24">
-                            <g transform="translate(3.649800, 2.749900)">
-                              <line x1="10.6555" x2="5.2555" y1="12.6999" y2="12.6999"></line>
-                              <line x1="8.6106" x2="5.2546" y1="8.6886" y2="8.6886"></line>
-                              <path d="M16.51,5.55 L10.84,0.15 C10.11,0.05 9.29,0 8.39,0 C2.1,0 -1.95399252e-14,2.32 -1.95399252e-14,9.25 C-1.95399252e-14,16.19 2.1,18.5 8.39,18.5 C14.69,18.5 16.79,16.19 16.79,9.25 C16.79,7.83 16.7,6.6 16.51,5.55 Z"></path>
-                              <path d="M10.2844,0.0827 L10.2844,2.7437 C10.2844,4.6017 11.7904,6.1067 13.6484,6.1067 L16.5994,6.1067"></path>
-                            </g>
-                          </svg>
-                        </div>
-                        <input id="getlink" readonly="readonly" type="text" value="https://calculadora.work/">
-                        <div class="shareNotif" id="shareNotif"></div>
-                      </li>
+                    </div>
+                </div>
+                <div class='headerDiv headerRight'>
+                    <div class='headerIcon'> <span aria-label='Dark' class='navDark' data-text='Dark' onclick='darkMode()' role='button'> <i></i> </span> </div>
+                </div>
+            </div>
+        </header>
+        <div class='mainMenu'>
+            <div class='section' id='main-menu'>
+                <div class='widget HTML' data-version='2' id='HTML000'>
+                    <ul class='htmlMenu' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement'>
+                        <li class='close'> <label class='link' for='offnav-input'> <svg class='line' viewBox='0 0 24 24'>
+                                    <g transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                                        <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                                    </g>
+                                </svg> <span class='name' data-text='Back'></span> </label> </li>
+                        <li class='dropDown break'> <input class='dropMenu hidden' id='offdropMenu2' name='dropDown' type='checkbox' /> <label class='link' for='offdropMenu2'> <svg class='line' viewBox='0 0 24 24'>
+                                    <g transform='translate(2.500000, 2.500000)'>
+                                        <line x1='6.6787' x2='12.4937' y1='12.0742685' y2='12.0742685'></line>
+                                        <path d='M-1.13686838e-13,5.29836453 C-1.13686838e-13,2.85645977 1.25,0.75931691 3.622,0.272650243 C5.993,-0.214968804 7.795,-0.0463973758 9.292,0.761221672 C10.79,1.56884072 10.361,2.76122167 11.9,3.63645977 C13.44,4.51265024 15.917,3.19645977 17.535,4.94217405 C19.229,6.7697931 19.2200005,9.57550739 19.2200005,11.3640788 C19.2200005,18.1602693 15.413,18.6993169 9.61,18.6993169 C3.807,18.6993169 -1.13686838e-13,18.2288407 -1.13686838e-13,11.3640788 L-1.13686838e-13,5.29836453 Z'></path>
+                                    </g>
+                                </svg> <span class='name'>Calculadora</span> <svg class='line down' viewBox='0 0 24 24'>
+                                    <g transform='translate(5.000000, 8.500000)'>
+                                        <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                                    </g>
+                                </svg> </label>
+                            <ul>
+                                <li itemprop='name'> <a href='https://calculadora.work/' itemprop='url'>Calculadora</a> </li>
+                                <li itemprop='name'> <a href='https://calculadora.work/calculadora-de-hipoteca' itemprop='url'>Calculadora de hipoteca</a> </li>
+                                <li itemprop='name'> <a href='https://calculadora.work/calculadora-sueldo-neto' itemprop='url'>Calculadora sueldo neto</a> </li>
+                                <li itemprop='name'> <a href='https://calculadora.work/calculadora-de-préstamo' itemprop='url'>Calculadora de préstamo</a> </li>
+                                <li itemprop='name'> <a href='https://calculadora.work/calculadora-de-interés-compuesto' itemprop='url'>Calculadora de interés compuesto</a> </li>
+                            </ul>
+                        </li>
+                        <li> <a class='link' href='https://calculadora.work/' itemprop='url'> <span class='name' itemprop='name'>Calculadora</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/calculadora-de-hipoteca' itemprop='url'> <span class='name' itemprop='name'>Calculadora de hipoteca</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/calculadora-sueldo-neto' itemprop='url'> <span class='name' itemprop='name'>Calculadora sueldo neto</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/calculadora-de-préstamo' itemprop='url'> <span class='name' itemprop='name'>Calculadora de préstamo</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/calculadora-de-interés-compuesto' itemprop='url'> <span class='name' itemprop='name'>Calculadora de interés compuesto</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/calculadora-de-préstamo' itemprop='url'> <span class='name' itemprop='name'>Calculadora de reembolso de préstamos</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/privacy-policy' itemprop='url'> <span class='name' itemprop='name'>Privacy Policy</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/disclaimer' itemprop='url'> <span class='name' itemprop='name'>Disclaimer</span> </a> </li>
+                        <li> <a class='link' href='https://calculadora.work/about' itemprop='url'> <svg class='line' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                                    <g transform='translate(2.749500, 2.549500)'>
+                                        <path d='M6.809,18.9067 C3.137,18.9067 9.41469125e-14,18.3517 9.41469125e-14,16.1277 C9.41469125e-14,13.9037 3.117,11.8997 6.809,11.8997 C10.481,11.8997 13.617,13.8847 13.617,16.1077 C13.617,18.3307 10.501,18.9067 6.809,18.9067 Z'></path>
+                                        <path d='M6.809,8.728 C9.219,8.728 11.173,6.774 11.173,4.364 C11.173,1.954 9.219,-2.48689958e-14 6.809,-2.48689958e-14 C4.399,-2.48689958e-14 2.44496883,1.954 2.44496883,4.364 C2.436,6.766 4.377,8.72 6.778,8.728 L6.809,8.728 Z'></path>
+                                        <path d='M14.0517,7.5293 C15.4547,7.1543 16.4887007,5.8753 16.4887007,4.3533 C16.4897,2.7653 15.3627,1.4393 13.8647,1.1323'></path>
+                                        <path d='M14.7113,11.104 C16.6993,11.104 18.3973,12.452 18.3973,13.655 C18.3973,14.364 17.8123,15.092 16.9223,15.301'></path>
+                                    </g>
+                                </svg> <span class='name' itemprop='name'>About</span> </a> </li>
+                        <li class='break'> <a class='link' href='https://calculadora.work/contact' itemprop='url'> <svg class='line' viewBox='0 0 24 24'>
+                                    <g transform='translate(2.452080, 2.851980)'>
+                                        <path d='M15.0928322,6.167017 C15.0928322,6.167017 11.8828071,10.0196486 9.53493746,10.0196486 C7.18807029,10.0196486 3.941955,6.167017 3.941955,6.167017'></path>
+                                        <path d='M1.04805054e-13,9.11679198 C1.04805054e-13,2.27869674 2.38095238,8.8817842e-15 9.52380952,8.8817842e-15 C16.6666667,8.8817842e-15 19.047619,2.27869674 19.047619,9.11679198 C19.047619,15.9538847 16.6666667,18.233584 9.52380952,18.233584 C2.38095238,18.233584 1.04805054e-13,15.9538847 1.04805054e-13,9.11679198 Z'></path>
+                                    </g>
+                                </svg> <span class='name' itemprop='name'>Contact</span> </a> </li>
+                        <li> <a class='link' href='https://twitter.com/DevDasPratap/' itemprop='url'> <span class='name' itemprop='name'>Follow</span> </a> </li>
                     </ul>
-                  </div>
                 </div>
-                <label class="fullClose" for="offshare-check"></label>
-              </div>
-            </div>
-            <!-- <img src="assets/ad-rectangle.jpg" width="100%;"> -->
-            <div style="margin: 19px 19px;">
-              <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script>
-              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
-              <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-          </main>
-          <!-- SIDEBAR -->
-          <aside class='sidebar'>
-            <div style="margin: 19px 19px;">
-              <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script>
-              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
-              <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-            <div style="margin: 19px 19px;">
-              <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script>
-              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
-              <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-            <div style="margin: 19px 19px;">
-              <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script>
-              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
-              <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-            <!-- <img src="assets/ad-square.jpg" width="100%;"><img src="assets/ad-square.jpg" width="100%;"><img src="assets/ad-square.jpg" width="100%;"> -->
-          </aside>
+            </div> <label class='fullClose menu' for='offnav-input'></label>
         </div>
-      </div>
-      <div class="section" id="mobile-menu">
-        <div class="widget LinkList" data-version="2" id="LinkList003">
-          <ul class="mobileMenu">
-            <li class="mHome">
-              <a aria-label="Home" href="https://calculadora.work/" role="button">
-                <svg class="line" viewBox="0 0 24 24">
-                  <g transform="translate(2.400000, 2.000000)">
-                    <path class="fill" d="M1.24344979e-14,11.713 C1.24344979e-14,6.082 0.614,6.475 3.919,3.41 C5.365,2.246 7.615,0 9.558,0 C11.5,0 13.795,2.235 15.254,3.41 C18.559,6.475 19.172,6.082 19.172,11.713 C19.172,20 17.213,20 9.586,20 C1.959,20 1.24344979e-14,20 1.24344979e-14,11.713 Z"></path>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="mDark">
-              <div onclick="darkMode()">
-                <svg class="line" viewBox="0 0 24 24">
-                  <path class="fill" d="M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z" transform="translate(-169.3959 -166.45548)"></path>
-                </svg>
-              </div>
-            </li>
-            <li class="mNav">
-              <label for="offnav-input">
-                <svg class="line" viewBox="0 0 24 24">
-                  <g transform="translate(3.000000, 3.000000)">
-                    <path class="fill" d="M18.00036,3.6738 C18.00036,5.7024 16.35516,7.3476 14.32656,7.3476 C12.29796,7.3476 10.65366,5.7024 10.65366,3.6738 C10.65366,1.6452 12.29796,-6.39488462e-15 14.32656,-6.39488462e-15 C16.35516,-6.39488462e-15 18.00036,1.6452 18.00036,3.6738 Z"></path>
-                    <path class="fill" d="M7.3467,3.6738 C7.3467,5.7024 5.7024,7.3476 3.6729,7.3476 C1.6452,7.3476 4.79616347e-15,5.7024 4.79616347e-15,3.6738 C4.79616347e-15,1.6452 1.6452,-6.39488462e-15 3.6729,-6.39488462e-15 C5.7024,-6.39488462e-15 7.3467,1.6452 7.3467,3.6738 Z"></path>
-                    <path class="fill" d="M18.00036,14.26194 C18.00036,16.29054 16.35516,17.93484 14.32656,17.93484 C12.29796,17.93484 10.65366,16.29054 10.65366,14.26194 C10.65366,12.23334 12.29796,10.58814 14.32656,10.58814 C16.35516,10.58814 18.00036,12.23334 18.00036,14.26194 Z"></path>
-                    <path class="fill" d="M7.3467,14.26194 C7.3467,16.29054 5.7024,17.93484 3.6729,17.93484 C1.6452,17.93484 4.79616347e-15,16.29054 4.79616347e-15,14.26194 C4.79616347e-15,12.23334 1.6452,10.58814 3.6729,10.58814 C5.7024,10.58814 7.3467,12.23334 7.3467,14.26194 Z"></path>
-                  </g>
-                </svg>
-              </label>
-            </li>
-            <li class="shareButton">
-              <label for="offshare-check">
-                <svg class="line" viewBox="0 0 24 24">
-                  <path class="fill" d="M92.30583,264.72053a3.42745,3.42745,0,0,1-.37,1.57,3.51,3.51,0,1,1,0-3.13995A3.42751,3.42751,0,0,1,92.30583,264.72053Z" transform="translate(-83.28571 -252.73452)"></path>
-                  <circle class="fill" cx="18.48892" cy="5.49436" r="3.51099"></circle>
-                  <circle class="fill" cx="18.48892" cy="18.50564" r="3.51099"></circle>
-                  <line class="cls-3" x1="12.53012" x2="8.65012" y1="8.476" y2="10.416"></line>
-                  <line class="cls-3" x1="12.53012" x2="8.65012" y1="15.496" y2="13.556"></line>
-                </svg>
-              </label>
-            </li>
-            <li class="mTop">
-              <div onclick="window.scrollTo({top: 0});">
-                <svg class="line" viewBox="0 0 24 24">
-                  <g transform="translate(2.500000, 3.000000)">
-                    <path class="fill" d="M9.5,18 C3.00557739,18 0.456662548,17.5386801 0.0435259337,15.2033146 C-0.36961068,12.8679491 2.27382642,8.47741935 3.08841712,7.02846996 C5.81256986,2.18407813 7.66371927,0 9.5,0 C11.3362807,0 13.1874301,2.18407813 15.9115829,7.02846996 C16.7261736,8.47741935 19.3696107,12.8679491 18.9564741,15.2033146 C18.5443995,17.5386801 15.9944226,18 9.5,18 Z"></path>
-                  </g>
-                </svg>
-              </div>
-            </li>
-          </ul>
+        <div class='mainInner sectionInner'>
+            <div class='blogContent'>
+                <!-- CONTENT AREA -->
+                <main class='mainbar'>
+                    <div class="sci">
+                        <div class="result-box">
+                            <div id="sciInPut">&nbsp;</div>
+                            <div id="sciOutPut">0</div>
+                        </div>
+                        <div class="buttons-row"> <span onclick="r('sin')" class="buttons">sin</span> <span onclick="r('cos')" class="buttons">cos</span> <span onclick="r('tan')" class="buttons">tan</span> <span class="buttons"> <label for="scirdsettingd"> <input id="scirdsettingd" type="radio" name="scirdsetting" value="deg" onclick="cnDegreeRadians='degree';" checked="">Deg </label> </span> <span class="buttons"> <label for="scirdsettingr"> <input id="scirdsettingr" type="radio" name="scirdsetting" value="rad" onclick="cnDegreeRadians='radians';">Rad </label> </span> </div>
+                        <div class="buttons-row"> <span onclick="r('asin')" class="buttons">sin <sup>-1</sup> </span> <span onclick="r('acos')" class="buttons">cos <sup>-1</sup> </span> <span onclick="r('atan')" class="buttons">tan <sup>-1</sup> </span> <span onclick="r('pi')" class="buttons">π</span> <span onclick="r('e')" class="buttons">e</span> </div>
+                        <div class="buttons-row"> <span onclick="r('pow')" class="buttons">x <sup>y</sup> </span> <span onclick="r('x3')" class="buttons">x <sup>3</sup> </span> <span onclick="r('x2')" class="buttons">x <sup>2</sup> </span> <span onclick="r('ex')" class="buttons">e <sup>x</sup> </span> <span onclick="r('10x')" class="buttons">10 <sup>x</sup> </span> </div>
+                        <div class="buttons-row"> <span onclick="r('apow')" class="buttons"> <sup>y</sup>√x </span> <span onclick="r('3x')" class="buttons"> <sup>3</sup>√x </span> <span onclick="r('sqrt')" class="buttons">√x</span> <span onclick="r('ln')" class="buttons">ln</span> <span onclick="r('log')" class="buttons">log</span> </div>
+                        <div class="buttons-row"> <span onclick="r('(')" class="buttons">(</span> <span onclick="r(')')" class="buttons">)</span> <span onclick="r('1/x')" class="buttons">1/x</span> <span onclick="r('pc')" class="buttons">%</span> <span onclick="r('n!')" class="buttons">n!</span> </div>
+                        <div class="buttons-row"> <span onclick="r(7)" class="buttons" style="background-color: #000; color: white">7</span> <span onclick="r(8)" class="buttons" style="background-color: #000; color: white">8</span> <span onclick="r(9)" class="buttons" style="background-color: #000; color: white">9</span> <span onclick="r('+')" class="buttons">+</span> <span onclick="r('bk')" class="buttons" style="background-color: #2d5cdf; color: white">Back(⬅️)</span> </div>
+                        <div class="buttons-row"> <span onclick="r(4)" class="buttons" style="background-color: #000; color: white">4</span> <span onclick="r(5)" class="buttons" style="background-color: #000; color: white">5</span> <span onclick="r(6)" class="buttons" style="background-color: #000; color: white">6</span> <span onclick="r('-')" class="buttons">–</span> <span onclick="r('ans')" class="buttons">Ans</span> </div>
+                        <div class="buttons-row"> <span onclick="r(1)" class="buttons" style="background-color: #000; color: white">1</span> <span onclick="r(2)" class="buttons" style="background-color: #000; color: white">2</span> <span onclick="r(3)" class="buttons" style="background-color: #000; color: white">3</span> <span onclick="r('*')" class="buttons">×</span> <span onclick="r('M+')" class="buttons">M+</span> </div>
+                        <div class="buttons-row"> <span onclick="r(0)" class="buttons" style="background-color: #000; color: white">0</span> <span onclick="r('.')" class="buttons">.</span> <span onclick="r('EXP')" class="buttons">EXP</span> <span onclick="r('/')" class="buttons">÷</span> <span onclick="r('M-')" class="buttons">M-</span> </div>
+                        <div class="buttons-row"> <span onclick="r('+/-')" class="buttons">±</span> <span onclick="r('RND')" class="buttons">RND</span> <span onclick="r('C')" class="buttons" style="background-color: #2d5cdf; color: white">AC</span> <span onclick="r('=')" class="buttons" style="background-color: #2ecc71; color: white; font-weight: bold;">=</span> <span onclick="r('MR')" class="buttons" id="scimrc">MR</span> </div>
+                    </div>
+                    <h4>Historial de cálculo: </h4>
+                    <div id="scihistory"></div>
+                    <h1>Computadora en línea</h1>
+                    <p>Una calculadora científica es una de las mejores calculadoras para cálculos rápidos y fáciles. Sitio web aquí podemos calcular casi todo tipo de cosas matemáticas. Puede utilizar este sitio para fines científicos, matemáticos, contables y comerciales.</p>
+                    <p>La calculadora proporciona funciones matemáticas simples y avanzadas en un hermoso diseño.</p>
+                    <h2>Calculadora - Calculadora científica / matemática GRATUITA en línea</h2>
+                    <ul>
+                        <li> <strong>AC = Todo claro</strong> </li>
+                        <li> <strong>mc = Borrar memoria</strong> </li>
+                        <li> <strong>m+ = Memory Plus</strong> </li>
+                        <li> <strong>m- = Menos memoria</strong> </li>
+                        <li> <strong>mr = Recuperacion de memoria</strong> </li>
+                        <li> <strong>CE = Entrada clara</strong> </li>
+                        <li> <strong>√x = Raíz cuadrada</strong> </li>
+                        <li> <strong>AC = Todo claro</strong> </li>
+                        <li> <strong>e <sup>x</sup> = exponencial, eleva e a la potencia x </strong> </li>
+                        <li> <strong>1/x or x <sup>−1</sup> = Una multiplicativa inversa o recíproca de un número x </strong> </li>
+                        <li> <strong>x² = Cuadrada</strong> </li>
+                        <li> <strong>() = Paréntesis, indica a la calculadora que haga esta operación primero</strong> </li>
+                        <li> <strong>y <sup>x</sup> or x <sup>y</sup> = y elevado a la potencia x o x elevado a la y </strong> </li>
+                        <li> <strong>y√x = La función padre de una función de raíz cuadrada es y = √x</strong> </li>
+                        <li> <strong>tan <sup>-1</sup> = La inversa de la tangente se denota como Arctangent o en una calculadora aparecerá como atan or tan <sup>-1</sup> </strong> </li>
+                        <li> <strong>cos <sup>-1</sup> = Se llama acos y arccos </strong> </li>
+                        <li> <strong>sin <sup>-1</sup> = Función de seno inverso or Sin <sup>-1</sup> toma la relación, Lado opuesto / Lado hipotenusa y produce el ángulo θ. También está escrito como arcsin </strong> </li>
+                        <li> <strong>ln = La función de registro es Ln(x) = Log(x)/Log(e)</strong> </li>
+                        <li> <strong>Rad = Radianes</strong> </li>
+                        <li> <strong>Deg = Grados</strong> </li>
+                        <li> <strong>e = E (or e) representa el exponente de 10</strong> </li>
+                        <li> <strong>RND = Da un número aleatorio en (0,1)</strong> </li>
+                        <li> <strong>EXP = Significa exponente (haga clic en el botón Asp que encontrará en la mitad izquierda del teclado de la calculadora)</strong> </li>
+                        <li> <strong>± = Operaciones tanto positivas como negativas</strong> </li>
+                    </ul>
+                    <h2>Calculadora: todo lo que debes saber sobre ella</h2>
+                    <p>Las calculadoras son herramientas incre&iacute;blemente &uacute;tiles que nos ayudan a hacer c&aacute;lculos y resolver problemas matem&aacute;ticos. Aunque hoy en d&iacute;a la mayor&iacute;a de la gente usa calculadoras digitales, tambi&eacute;n existen calculadoras anal&oacute;gicas y mec&aacute;nicas. Aunque pueden parecer diferentes, todas las calculadoras funcionan de la misma manera: utilizan n&uacute;meros y operaciones para ayudarnos a resolver problemas.</p>
+                    <p>La calculadora cient&iacute;fica se utiliza en la ense&ntilde;anza de las ciencias, la ingenier&iacute;a y las matem&aacute;ticas, as&iacute; como en el comercio, las finanzas y otros campos empresariales. Adem&aacute;s, son ampliamente utilizadas por estudiantes en escuelas de todo el mundo.</p>
+                    <p>&iquest;Quieres saber m&aacute;s sobre las calculadoras? Aqu&iacute; te lo contamos todo.</p>
+                    <h2>Historia de la calculadora</h2>
+                    <p>Las calculadoras han existido desde hace mucho tiempo. La primera calculadora fue inventada por el matem&aacute;tico griego Arqu&iacute;medes en el siglo III a. C. La calculadora de Arqu&iacute;medes era una rueda de dentado que se pod&iacute;a usar para hacer c&aacute;lculos de &aacute;rea y volumen. Aunque era muy rudimentario, este invento fue un gran avance en el campo de la matem&aacute;tica.</p>
+                    <p>En el siglo XVI, el matem&aacute;tico italiano Gerolamo Cardano invent&oacute; la primera calculadora mec&aacute;nica. Cardano llam&oacute; a su invento la &laquo;m&aacute;quina aritm&eacute;tica&raquo;. Su m&aacute;quina era capaz de hacer sumas, restas, multiplicaciones y divisiones. Aunque era un gran avance, la m&aacute;quina de Cardano era muy lenta y complicada de usar.</p>
+                    <p>En 1623, el matem&aacute;tico alem&aacute;n Wilhelm Schickard invent&oacute; la primera calculadora mec&aacute;nica capaz de imprimir los resultados. Esta calculadora se conoci&oacute; como la &laquo;calculadora de Schickard&raquo;.</p>
+                    <p>La primera calculadora que pod&iacute;a hacer algo m&aacute;s que sumas fue inventada por Charles Xavier Thomas en 1820. Esta calculadora ten&iacute;a seis funciones diferentes y estaba hecha de madera con engranajes de metal en su interior.</p>
+                    <p>En 1878, William Seward Burroughs cre&oacute; una calculadora que pod&iacute;a realizar cuatro funciones diferentes: suma, resta, multiplicaci&oacute;n y divisi&oacute;n. &iexcl;Y luego, en 1890, tambi&eacute;n agreg&oacute; ra&iacute;ces cuadradas a su calculadora!</p>
+                    <p>Las calculadoras se utilizaron por primera vez para matem&aacute;ticas avanzadas y c&aacute;lculos cient&iacute;ficos en el siglo XIX. La primera calculadora electr&oacute;nica fue construida por John Vincent Atanasoff y Clifford Berry en 1939. La llamaron &quot;ABC&quot;.</p>
+                    <p>Hoy en d&iacute;a, una calculadora cient&iacute;fica es un tipo de calculadora que puede hacer m&aacute;s que la aritm&eacute;tica b&aacute;sica. Puede resolver ecuaciones, realizar funciones trigonom&eacute;tricas y funciones logar&iacute;tmicas.</p>
+                    <h2>&iquest;Qu&eacute; es la calculadora de Alicia?</h2>
+                    <p>La calculadora Alicia es la soluci&oacute;n perfecta para ayudarte con tus deberes de matem&aacute;ticas. Cuenta con una interfaz sencilla y f&aacute;cil de usar y una amplia gama de funciones que te har&aacute;n la vida m&aacute;s f&aacute;cil.</p>
+                    <p>Viene con un solucionador de ecuaciones, una calculadora cient&iacute;fica, un conversor de unidades, un conversor de divisas y mucho m&aacute;s.</p>
+                    <p>Cuando la abras por primera vez, ver&aacute;s una pantalla como &eacute;sta:</p>
+                    <p>Puedes escribir tu expresi&oacute;n o ecuaci&oacute;n utilizando el teclado que aparece en la parte inferior de la pantalla. Si haces clic en uno de estos botones, aparecer&aacute; en la parte superior de la pantalla para que no tengas que escribirlo todo manualmente.</p>
+                    <p>Si pulsas enter despu&eacute;s de introducir una ecuaci&oacute;n o expresi&oacute;n, &iexcl;la resolver&aacute; autom&aacute;ticamente por ti!</p>
+                    <p>As&iacute; mismo, la calculadora de Alicia tiene una variedad de caracter&iacute;sticas que pueden ayudar a los estudiantes a resolver problemas matem&aacute;ticos. Puede mostrar los pasos para resolver un problema, proporcionar sugerencias e incluso proporcionar la respuesta cuando sea necesario.</p>
+                    <p>Adem&aacute;s, &iquest;sab&iacute;as que la calculadora Alicia cient&iacute;fica fue desarrollada por la Universidad de Texas en Austin? As&iacute; es, fue creado para ayudar a los estudiantes a explorar conceptos matem&aacute;ticos y cient&iacute;ficos a trav&eacute;s de la experimentaci&oacute;n. La calculadora se ha traducido a m&aacute;s de 30 idiomas, incluidos espa&ntilde;ol, portugu&eacute;s, alem&aacute;n, franc&eacute;s, holand&eacute;s, coreano, checo y turco.</p>
+                    <h2>Calculadora Alicia cient&iacute;fica</h2>
+                    <p>La mayor&iacute;a de las calculadoras cient&iacute;ficas tienen varias opciones que le permiten hacer uso de ellas en su d&iacute;a a d&iacute;a. La opci&oacute;n m&aacute;s popular es la divisi&oacute;n, que se utiliza para dividir una cantidad por otra. Tambi&eacute;n hay una funci&oacute;n de exponente, que permite al usuario convertir un n&uacute;mero en su exponencial equivalente.</p>
+                    <p>La calculadora cient&iacute;fica Alicia es una calculadora cient&iacute;fica potente y de alta calidad que est&aacute; lista para funcionar.</p>
+                    <p>Con un dise&ntilde;o elegante y una interfaz intuitiva, es f&aacute;cil de usar y r&aacute;pida de aprender. Sus grandes teclas son f&aacute;ciles de pulsar y hacen que los c&aacute;lculos sean m&aacute;s f&aacute;ciles que nunca.</p>
+                    <p>La calculadora cient&iacute;fica Alicia est&aacute; dise&ntilde;ada por profesores, para profesores. Tiene todas las funciones que necesitas para resolver problemas complejos con facilidad: c&aacute;lculos de fracciones, funciones trigonom&eacute;tricas (incluyendo cotangente, seno/coseno), potencias/ra&iacute;ces enteras, modo de radianes para n&uacute;meros complejos (incluyendo conjugados complejos), &iexcl;y mucho m&aacute;s! Incluso puede convertir entre n&uacute;meros decimales, binarios, hexadecimales, octales y hexadecimales.</p>
+                    <p>Adem&aacute;s de ser una excelente calculadora para la escuela o el trabajo, este modelo tambi&eacute;n es ideal para las personas que desean una calculadora cient&iacute;fica sencilla pero potente que se vea bien en su escritorio o que pueda caber en su bolsillo cuando est&aacute;n de viaje.</p>
+                    <h2>¿Propósito de usar una calculadora?</h2>
+                    <p>Utilice esta calculadora para matemáticas con suma, resta, división y multiplicación; las calculadoras científicas incluyen exponentes, logaritmo, logaritmo natural (ln), funciones trigonométricas y memoria.</p>
+                    <p>Este sitio web es lo único bastante fácil que tiene que hacer que simplemente seleccione el número, operador, función, etc.con el mouse o si está usando un teléfono móvil, luego toque los números y seleccione sus parámetros como número, operador, función, etc.</p>
+                    <h2>Conclusi&oacute;n</h2>
+                    <p>&iquest;Qui&eacute;n no ha usado una calculadora alguna vez en su vida? Las calculadoras son uno de esos inventos que han cambiado la forma en que hacemos las cosas. Ahora, con un simple toque de un bot&oacute;n, podemos obtener la respuesta a cualquier pregunta matem&aacute;tica. Esto nos permite ahorrar tiempo y esfuerzo, y nos permite concentrarnos en lo que realmente importa. Las calculadoras han simplificado nuestras vidas de una manera que nunca hubi&eacute;ramos imaginado.&nbsp;</p>
+                    <p>&iexcl;Gracias, calculadoras! Sin duda, son una de las mejores invenciones de todos los tiempos.</p>
+                    <p class="alert bg-primary" role="alert">Hola, 👋 Si desea utilizar este sitio web la próxima vez, marque (⭐) este sitio web. Y si este sitio web es útil para su familia o un amigo, envíelo (➥). Gracias 🙏</p> <!--             <p>Calculadora online con más características, puede obtener: número redondo, multiplicación, división, resta, además de los números, tangente, seno, coseno, cotangente, y muchas otras operaciones. este sitio web calcula: calculadora, calculadora cientifica, calculadora sueldo neto, calculadora online, calculadora de integrales, calculadora de derivadas, calculadora hipoteca, imc calculadora, calculadora normal, calculadora embarazo, calculadora científica, calculadora de limites, calculadora integrales, calculadora de matrices, calculadora derivadas, calculadora de ecuaciones, calculadora de embarazo, calculadora de fracciones, calculadora descuento, calculadora salario neto, calculadora ovulacion, metabolismo basal calculadora, semana embarazo calculadora, calculadora matrices, calculadora del amor, calculadora ecuaciones, calculadora de camellos, calculadora percentil, calculadora bitcoin, calculadora hipoteca idealista, calculadora de calorias, calculadora tae, calculadora apiretal, calculadora cientifica online, calculadora de porcentajes, calculadora de iva, calculadora de ovulacion, calculadora intereses, calculadora prestamos, calculadora de alicia </p> -->
+                    <div class="postShare" data-text="Share:">
+                        <div class="shareContent" data-text="Share:">
+                            <div class="shareIcon facebook"> <a aria-label="Share on Facebook" data-text="Facebook" href="https://www.facebook.com/sharer.php?u=https://calculadora.work/" rel="noopener" role="button" target="_blank"> <svg class="c-1" viewBox="0 0 32 32">
+                                        <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H17V18h4a1,1,0,0,0,0-2H17V14a2,2,0,0,1,2-2h2a1,1,0,0,0,0-2H19a4,4,0,0,0-4,4v2H12a1,1,0,0,0,0,2h3v9H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
+                                    </svg> </a> </div>
+                            <div class="shareIcon whatsapp"> <a aria-label="Share on Whatsapp" data-text="Whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fcalculadora.work%2F" rel="noopener" role="button" target="_blank"> <svg class="c-1" viewBox="0 0 32 32">
+                                        <path d="M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z"></path>
+                                        <path d="M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z"></path>
+                                    </svg> </a> </div>
+                            <div class="shareIcon twitter"> <a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https://calculadora.work/&text=Calculadora%20-%20Calculadora%20cient%C3%ADfica%20y%20financiera%20GRATUITA%20en%20l%C3%ADnea&via=DevDasPratap" rel="noopener" role="button" target="_blank" title="Share to Twitter"> <svg class="c-1" viewBox="0 0 32 32">
+                                        <path d="M13.35,28A13.66,13.66,0,0,1,2.18,22.16a1,1,0,0,1,.69-1.56l2.84-.39A12,12,0,0,1,5.44,4.35a1,1,0,0,1,1.7.31,9.87,9.87,0,0,0,5.33,5.68,7.39,7.39,0,0,1,7.24-6.15,7.29,7.29,0,0,1,5.88,3H29a1,1,0,0,1,.9.56,1,1,0,0,1-.11,1.06L27,12.27c0,.14,0,.28-.05.41a12.46,12.46,0,0,1,.09,1.43A13.82,13.82,0,0,1,13.35,28ZM4.9,22.34A11.63,11.63,0,0,0,13.35,26,11.82,11.82,0,0,0,25.07,14.11,11.42,11.42,0,0,0,25,12.77a1.11,1.11,0,0,1,0-.26c0-.22.05-.43.06-.65a1,1,0,0,1,.22-.58l1.67-2.11H25.06a1,1,0,0,1-.85-.47,5.3,5.3,0,0,0-4.5-2.51,5.41,5.41,0,0,0-5.36,5.45,1.07,1.07,0,0,1-.4.83,1,1,0,0,1-.87.2A11.83,11.83,0,0,1,6,7,10,10,0,0,0,8.57,20.12a1,1,0,0,1,.37,1.05,1,1,0,0,1-.83.74Z"></path>
+                                    </svg> </a> </div>
+                            <div class="shareIcon shareButton"> <label for="offshare-check"> <svg class="line" viewBox="0 0 24 24">
+                                        <path class="fill" d="M92.30583,264.72053a3.42745,3.42745,0,0,1-.37,1.57,3.51,3.51,0,1,1,0-3.13995A3.42751,3.42751,0,0,1,92.30583,264.72053Z" transform="translate(-83.28571 -252.73452)"></path>
+                                        <circle class="fill" cx="18.48892" cy="5.49436" r="3.51099"></circle>
+                                        <circle class="fill" cx="18.48892" cy="18.50564" r="3.51099"></circle>
+                                        <line class="cls-3" x1="12.53012" x2="8.65012" y1="8.476" y2="10.416"></line>
+                                        <line class="cls-3" x1="12.53012" x2="8.65012" y1="15.496" y2="13.556"></line>
+                                    </svg> </label> </div>
+                        </div> <input class="shareIn hidden" id="offshare-check" type="checkbox">
+                        <div class="shareInner">
+                            <div class="shareBlock">
+                                <div class="shareHeader" data-text="Share to other apps"> <label for="offshare-check"> <svg class="line" viewBox="0 0 24 24">
+                                            <line x1="18" x2="6" y1="6" y2="18"></line>
+                                            <line x1="6" x2="18" y1="6" y2="18"></line>
+                                        </svg> </label> </div>
+                                <div class="shareBox">
+                                    <ul>
+                                        <li>
+                                            <div> <a aria-label="Twitter" data-text="Twitter" href="https://twitter.com/intent/tweet?url=https://calculadora.work/&text=Calculadora%20-%20Calculadora%20cient%C3%ADfica%20y%20financiera%20GRATUITA%20en%20l%C3%ADnea&via=DevDasPratap" rel="noopener" role="button" target="_blank" title="Share to Twitter"> <svg class="c-1" viewBox="0 0 32 32">
+                                                        <path d="M13.35,28A13.66,13.66,0,0,1,2.18,22.16a1,1,0,0,1,.69-1.56l2.84-.39A12,12,0,0,1,5.44,4.35a1,1,0,0,1,1.7.31,9.87,9.87,0,0,0,5.33,5.68,7.39,7.39,0,0,1,7.24-6.15,7.29,7.29,0,0,1,5.88,3H29a1,1,0,0,1,.9.56,1,1,0,0,1-.11,1.06L27,12.27c0,.14,0,.28-.05.41a12.46,12.46,0,0,1,.09,1.43A13.82,13.82,0,0,1,13.35,28ZM4.9,22.34A11.63,11.63,0,0,0,13.35,26,11.82,11.82,0,0,0,25.07,14.11,11.42,11.42,0,0,0,25,12.77a1.11,1.11,0,0,1,0-.26c0-.22.05-.43.06-.65a1,1,0,0,1,.22-.58l1.67-2.11H25.06a1,1,0,0,1-.85-.47,5.3,5.3,0,0,0-4.5-2.51,5.41,5.41,0,0,0-5.36,5.45,1.07,1.07,0,0,1-.4.83,1,1,0,0,1-.87.2A11.83,11.83,0,0,1,6,7,10,10,0,0,0,8.57,20.12a1,1,0,0,1,.37,1.05,1,1,0,0,1-.83.74Z"></path>
+                                                    </svg> </a> </div>
+                                        </li>
+                                        <li>
+                                            <div> <a aria-label="Share on Facebook" data-text="Facebook" href="https://www.facebook.com/sharer.php?u=https://calculadora.work/" rel="noopener" role="button" target="_blank"> <svg class="c-1" viewBox="0 0 32 32">
+                                                        <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H17V18h4a1,1,0,0,0,0-2H17V14a2,2,0,0,1,2-2h2a1,1,0,0,0,0-2H19a4,4,0,0,0-4,4v2H12a1,1,0,0,0,0,2h3v9H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
+                                                    </svg> </a> </div>
+                                        </li>
+                                        <li>
+                                            <div> <a aria-label="Share on Whatsapp" data-text="Whatsapp" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fcalculadora.work%2F" rel="noopener" role="button" target="_blank"> <svg class="c-1" viewBox="0 0 32 32">
+                                                        <path d="M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z"></path>
+                                                        <path d="M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z"></path>
+                                                    </svg> </a> </div>
+                                        </li>
+                                        <li>
+                                            <div class="copyLink" data-text="Copy link" onclick="copyFunction()"> <svg class="line" viewBox="0 0 24 24">
+                                                    <g transform="translate(3.649800, 2.749900)">
+                                                        <line x1="10.6555" x2="5.2555" y1="12.6999" y2="12.6999"></line>
+                                                        <line x1="8.6106" x2="5.2546" y1="8.6886" y2="8.6886"></line>
+                                                        <path d="M16.51,5.55 L10.84,0.15 C10.11,0.05 9.29,0 8.39,0 C2.1,0 -1.95399252e-14,2.32 -1.95399252e-14,9.25 C-1.95399252e-14,16.19 2.1,18.5 8.39,18.5 C14.69,18.5 16.79,16.19 16.79,9.25 C16.79,7.83 16.7,6.6 16.51,5.55 Z"></path>
+                                                        <path d="M10.2844,0.0827 L10.2844,2.7437 C10.2844,4.6017 11.7904,6.1067 13.6484,6.1067 L16.5994,6.1067"></path>
+                                                    </g>
+                                                </svg> </div> <input id="getlink" readonly="readonly" type="text" value="https://calculadora.work/">
+                                            <div class="shareNotif" id="shareNotif"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> <label class="fullClose" for="offshare-check"></label>
+                        </div>
+                    </div> <!-- <img src="assets/ad-rectangle.jpg" width="100%;"> -->
+                    <div style="margin: 19px 19px;">
+                        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </main> <!-- SIDEBAR -->
+                <aside class='sidebar'>
+                    <div style="margin: 19px 19px;">
+                        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div style="margin: 19px 19px;">
+                        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div style="margin: 19px 19px;">
+                        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750632306324935" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4750632306324935" data-ad-slot="8668696507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div> <!-- <img src="assets/ad-square.jpg" width="100%;"><img src="assets/ad-square.jpg" width="100%;"><img src="assets/ad-square.jpg" width="100%;"> -->
+                </aside>
+            </div>
         </div>
-      </div>
-      <footer class='sectionInner'>
-        <div class='creditInner'>
-          <p>&#169; <span id='getYear'></span> &#8231; <a class="hyperlink" href='https://calculadora.work/'>Calculadora</a>. Reservados todos los derechos. Hecho con ❤️ <a class="hyperlink" href='https://twitter.com/DevDasPratap'>Follow</a>
-          </p>
-          <div class='toTop' onclick='window.scrollTo({top: 0});'>
-            <svg class='line' viewBox='0 0 24 24'>
-              <g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
-                <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-              </g>
-            </svg>
-          </div>
+        <div class="section" id="mobile-menu">
+            <div class="widget LinkList" data-version="2" id="LinkList003">
+                <ul class="mobileMenu">
+                    <li class="mHome"> <a aria-label="Home" href="https://calculadora.work/" role="button"> <svg class="line" viewBox="0 0 24 24">
+                                <g transform="translate(2.400000, 2.000000)">
+                                    <path class="fill" d="M1.24344979e-14,11.713 C1.24344979e-14,6.082 0.614,6.475 3.919,3.41 C5.365,2.246 7.615,0 9.558,0 C11.5,0 13.795,2.235 15.254,3.41 C18.559,6.475 19.172,6.082 19.172,11.713 C19.172,20 17.213,20 9.586,20 C1.959,20 1.24344979e-14,20 1.24344979e-14,11.713 Z"></path>
+                                </g>
+                            </svg> </a> </li>
+                    <li class="mDark">
+                        <div onclick="darkMode()"> <svg class="line" viewBox="0 0 24 24">
+                                <path class="fill" d="M183.72453,170.371a10.4306,10.4306,0,0,1-.8987,3.793,11.19849,11.19849,0,0,1-5.73738,5.72881,10.43255,10.43255,0,0,1-3.77582.89138,1.99388,1.99388,0,0,0-1.52447,3.18176,10.82936,10.82936,0,1,0,15.118-15.11819A1.99364,1.99364,0,0,0,183.72453,170.371Z" transform="translate(-169.3959 -166.45548)"></path>
+                            </svg> </div>
+                    </li>
+                    <li class="mNav"> <label for="offnav-input"> <svg class="line" viewBox="0 0 24 24">
+                                <g transform="translate(3.000000, 3.000000)">
+                                    <path class="fill" d="M18.00036,3.6738 C18.00036,5.7024 16.35516,7.3476 14.32656,7.3476 C12.29796,7.3476 10.65366,5.7024 10.65366,3.6738 C10.65366,1.6452 12.29796,-6.39488462e-15 14.32656,-6.39488462e-15 C16.35516,-6.39488462e-15 18.00036,1.6452 18.00036,3.6738 Z"></path>
+                                    <path class="fill" d="M7.3467,3.6738 C7.3467,5.7024 5.7024,7.3476 3.6729,7.3476 C1.6452,7.3476 4.79616347e-15,5.7024 4.79616347e-15,3.6738 C4.79616347e-15,1.6452 1.6452,-6.39488462e-15 3.6729,-6.39488462e-15 C5.7024,-6.39488462e-15 7.3467,1.6452 7.3467,3.6738 Z"></path>
+                                    <path class="fill" d="M18.00036,14.26194 C18.00036,16.29054 16.35516,17.93484 14.32656,17.93484 C12.29796,17.93484 10.65366,16.29054 10.65366,14.26194 C10.65366,12.23334 12.29796,10.58814 14.32656,10.58814 C16.35516,10.58814 18.00036,12.23334 18.00036,14.26194 Z"></path>
+                                    <path class="fill" d="M7.3467,14.26194 C7.3467,16.29054 5.7024,17.93484 3.6729,17.93484 C1.6452,17.93484 4.79616347e-15,16.29054 4.79616347e-15,14.26194 C4.79616347e-15,12.23334 1.6452,10.58814 3.6729,10.58814 C5.7024,10.58814 7.3467,12.23334 7.3467,14.26194 Z"></path>
+                                </g>
+                            </svg> </label> </li>
+                    <li class="shareButton"> <label for="offshare-check"> <svg class="line" viewBox="0 0 24 24">
+                                <path class="fill" d="M92.30583,264.72053a3.42745,3.42745,0,0,1-.37,1.57,3.51,3.51,0,1,1,0-3.13995A3.42751,3.42751,0,0,1,92.30583,264.72053Z" transform="translate(-83.28571 -252.73452)"></path>
+                                <circle class="fill" cx="18.48892" cy="5.49436" r="3.51099"></circle>
+                                <circle class="fill" cx="18.48892" cy="18.50564" r="3.51099"></circle>
+                                <line class="cls-3" x1="12.53012" x2="8.65012" y1="8.476" y2="10.416"></line>
+                                <line class="cls-3" x1="12.53012" x2="8.65012" y1="15.496" y2="13.556"></line>
+                            </svg> </label> </li>
+                    <li class="mTop">
+                        <div onclick="window.scrollTo({top: 0});"> <svg class="line" viewBox="0 0 24 24">
+                                <g transform="translate(2.500000, 3.000000)">
+                                    <path class="fill" d="M9.5,18 C3.00557739,18 0.456662548,17.5386801 0.0435259337,15.2033146 C-0.36961068,12.8679491 2.27382642,8.47741935 3.08841712,7.02846996 C5.81256986,2.18407813 7.66371927,0 9.5,0 C11.3362807,0 13.1874301,2.18407813 15.9115829,7.02846996 C16.7261736,8.47741935 19.3696107,12.8679491 18.9564741,15.2033146 C18.5443995,17.5386801 15.9944226,18 9.5,18 Z"></path>
+                                </g>
+                            </svg> </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </footer>
+        <footer class='sectionInner'>
+            <div class='creditInner'>
+                <p>&#169; <span id='getYear'></span> &#8231; <a class="hyperlink" href='https://calculadora.work/'>Calculadora</a>. Reservados todos los derechos. Hecho con ❤️ <a class="hyperlink" href='https://twitter.com/DevDasPratap'>Follow</a> </p>
+                <div class='toTop' onclick='window.scrollTo({top: 0});'> <svg class='line' viewBox='0 0 24 24'>
+                        <g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                            <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                        </g>
+                    </svg> </div>
+            </div>
+        </footer>
     </div>
-  </body>
+</body>
+
 </html>
